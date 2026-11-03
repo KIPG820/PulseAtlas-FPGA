@@ -1,0 +1,276 @@
+{
+  "criterion": "choose highest validation pad recall subject to <=5% false-electrode rate",
+  "selected_threshold_from_validation_only": 0.6,
+  "split_frame_counts": {
+    "test": 39,
+    "train": 391,
+    "val": 68
+  },
+  "excluded_frame_counts": {
+    "test:non_body_scene": 13,
+    "train:non_body_scene": 40,
+    "val:non_body_scene": 73,
+    "train:unreviewed_or_excluded": 17,
+    "train:multi_review_pending": 4
+  },
+  "validation_curve": [
+    {
+      "threshold": 0.45,
+      "tp": 65,
+      "fn": 8,
+      "fp": 9,
+      "tn": 71,
+      "pad_recall": 0.8904109589041096,
+      "false_electrode_rate_on_none": 0.1125,
+      "none_precision": 0.8987341772151899,
+      "balanced_accuracy": 0.8889554794520548
+    },
+    {
+      "threshold": 0.48,
+      "tp": 65,
+      "fn": 8,
+      "fp": 9,
+      "tn": 71,
+      "pad_recall": 0.8904109589041096,
+      "false_electrode_rate_on_none": 0.1125,
+      "none_precision": 0.8987341772151899,
+      "balanced_accuracy": 0.8889554794520548
+    },
+    {
+      "threshold": 0.5,
+      "tp": 65,
+      "fn": 8,
+      "fp": 7,
+      "tn": 73,
+      "pad_recall": 0.8904109589041096,
+      "false_electrode_rate_on_none": 0.0875,
+      "none_precision": 0.9012345679012346,
+      "balanced_accuracy": 0.9014554794520548
+    },
+    {
+      "threshold": 0.53,
+      "tp": 63,
+      "fn": 10,
+      "fp": 6,
+      "tn": 74,
+      "pad_recall": 0.863013698630137,
+      "false_electrode_rate_on_none": 0.075,
+      "none_precision": 0.8809523809523809,
+      "balanced_accuracy": 0.8940068493150686
+    },
+    {
+      "threshold": 0.55,
+      "tp": 61,
+      "fn": 12,
+      "fp": 6,
+      "tn": 74,
+      "pad_recall": 0.8356164383561644,
+      "false_electrode_rate_on_none": 0.075,
+      "none_precision": 0.8604651162790697,
+      "balanced_accuracy": 0.8803082191780822
+    },
+    {
+      "threshold": 0.58,
+      "tp": 60,
+      "fn": 13,
+      "fp": 5,
+      "tn": 75,
+      "pad_recall": 0.821917808219178,
+      "false_electrode_rate_on_none": 0.0625,
+      "none_precision": 0.8522727272727273,
+      "balanced_accuracy": 0.879708904109589
+    },
+    {
+      "threshold": 0.6,
+      "tp": 57,
+      "fn": 16,
+      "fp": 4,
+      "tn": 76,
+      "pad_recall": 0.7808219178082192,
+      "false_electrode_rate_on_none": 0.05,
+      "none_precision": 0.8260869565217391,
+      "balanced_accuracy": 0.8654109589041096
+    },
+    {
+      "threshold": 0.63,
+      "tp": 55,
+      "fn": 18,
+      "fp": 4,
+      "tn": 76,
+      "pad_recall": 0.7534246575342466,
+      "false_electrode_rate_on_none": 0.05,
+      "none_precision": 0.8085106382978723,
+      "balanced_accuracy": 0.8517123287671233
+    },
+    {
+      "threshold": 0.65,
+      "tp": 55,
+      "fn": 18,
+      "fp": 4,
+      "tn": 76,
+      "pad_recall": 0.7534246575342466,
+      "false_electrode_rate_on_none": 0.05,
+      "none_precision": 0.8085106382978723,
+      "balanced_accuracy": 0.8517123287671233
+    },
+    {
+      "threshold": 0.68,
+      "tp": 51,
+      "fn": 22,
+      "fp": 4,
+      "tn": 76,
+      "pad_recall": 0.6986301369863014,
+      "false_electrode_rate_on_none": 0.05,
+      "none_precision": 0.7755102040816326,
+      "balanced_accuracy": 0.8243150684931506
+    },
+    {
+      "threshold": 0.7,
+      "tp": 50,
+      "fn": 23,
+      "fp": 4,
+      "tn": 76,
+      "pad_recall": 0.684931506849315,
+      "false_electrode_rate_on_none": 0.05,
+      "none_precision": 0.7676767676767676,
+      "balanced_accuracy": 0.8174657534246574
+    },
+    {
+      "threshold": 0.73,
+      "tp": 49,
+      "fn": 24,
+      "fp": 4,
+      "tn": 76,
+      "pad_recall": 0.6712328767123288,
+      "false_electrode_rate_on_none": 0.05,
+      "none_precision": 0.76,
+      "balanced_accuracy": 0.8106164383561644
+    },
+    {
+      "threshold": 0.75,
+      "tp": 45,
+      "fn": 28,
+      "fp": 4,
+      "tn": 76,
+      "pad_recall": 0.6164383561643836,
+      "false_electrode_rate_on_none": 0.05,
+      "none_precision": 0.7307692307692307,
+      "balanced_accuracy": 0.7832191780821918
+    },
+    {
+      "threshold": 0.78,
+      "tp": 37,
+      "fn": 36,
+      "fp": 4,
+      "tn": 76,
+      "pad_recall": 0.5068493150684932,
+      "false_electrode_rate_on_none": 0.05,
+      "none_precision": 0.6785714285714286,
+      "balanced_accuracy": 0.7284246575342466
+    },
+    {
+      "threshold": 0.8,
+      "tp": 33,
+      "fn": 40,
+      "fp": 4,
+      "tn": 76,
+      "pad_recall": 0.4520547945205479,
+      "false_electrode_rate_on_none": 0.05,
+      "none_precision": 0.6551724137931034,
+      "balanced_accuracy": 0.701027397260274
+    },
+    {
+      "threshold": 0.83,
+      "tp": 26,
+      "fn": 47,
+      "fp": 2,
+      "tn": 78,
+      "pad_recall": 0.3561643835616438,
+      "false_electrode_rate_on_none": 0.025,
+      "none_precision": 0.624,
+      "balanced_accuracy": 0.6655821917808219
+    },
+    {
+      "threshold": 0.85,
+      "tp": 23,
+      "fn": 50,
+      "fp": 1,
+      "tn": 79,
+      "pad_recall": 0.3150684931506849,
+      "false_electrode_rate_on_none": 0.0125,
+      "none_precision": 0.6124031007751938,
+      "balanced_accuracy": 0.6512842465753425
+    },
+    {
+      "threshold": 0.88,
+      "tp": 21,
+      "fn": 52,
+      "fp": 1,
+      "tn": 79,
+      "pad_recall": 0.2876712328767123,
+      "false_electrode_rate_on_none": 0.0125,
+      "none_precision": 0.6030534351145038,
+      "balanced_accuracy": 0.6375856164383562
+    },
+    {
+      "threshold": 0.9,
+      "tp": 20,
+      "fn": 53,
+      "fp": 1,
+      "tn": 79,
+      "pad_recall": 0.273972602739726,
+      "false_electrode_rate_on_none": 0.0125,
+      "none_precision": 0.5984848484848485,
+      "balanced_accuracy": 0.630736301369863
+    },
+    {
+      "threshold": 0.93,
+      "tp": 15,
+      "fn": 58,
+      "fp": 1,
+      "tn": 79,
+      "pad_recall": 0.2054794520547945,
+      "false_electrode_rate_on_none": 0.0125,
+      "none_precision": 0.5766423357664233,
+      "balanced_accuracy": 0.5964897260273972
+    },
+    {
+      "threshold": 0.95,
+      "tp": 12,
+      "fn": 61,
+      "fp": 1,
+      "tn": 79,
+      "pad_recall": 0.1643835616438356,
+      "false_electrode_rate_on_none": 0.0125,
+      "none_precision": 0.5642857142857143,
+      "balanced_accuracy": 0.5759417808219178
+    }
+  ],
+  "frozen_test_at_baseline_0_5": {
+    "threshold": 0.5,
+    "tp": 41,
+    "fn": 2,
+    "fp": 6,
+    "tn": 54,
+    "pad_recall": 0.9534883720930233,
+    "false_electrode_rate_on_none": 0.1,
+    "none_precision": 0.9642857142857143,
+    "balanced_accuracy": 0.9267441860465117
+  },
+  "frozen_test_at_selected_threshold": {
+    "threshold": 0.6,
+    "tp": 37,
+    "fn": 6,
+    "fp": 4,
+    "tn": 56,
+    "pad_recall": 0.8604651162790697,
+    "false_electrode_rate_on_none": 0.06666666666666667,
+    "none_precision": 0.9032258064516129,
+    "balanced_accuracy": 0.8968992248062015
+  },
+  "limitations": [
+    "The source set is a single person's video family.",
+    "Validation and test crops are annotation-centered, not live pose-centered ROIs.",
+    "This threshold is a first false-trigger gate and does not replace a live replay."
+  ]
+}

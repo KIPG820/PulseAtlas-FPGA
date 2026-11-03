@@ -1,0 +1,26 @@
+seed: 42
+dataset_root: "data/ptb-xl"
+cache_dir: "nn/data/cache"
+artifact_dir: "nn/artifacts"
+sample_rate: 500
+input_samples: 5000
+batch_size: 64
+epochs: 100
+learning_rate: 0.001
+weight_decay: 0.0001
+early_stopping_patience: 12
+num_workers: 0
+device: "auto"
+labels: [NORM, MI, STTC, CD, HYP]
+train_folds: [1, 2, 3, 4, 5, 6, 7, 8]
+validation_fold: 9
+test_fold: 10
+normalization_clip: 8.0
+augmentation:
+  enabled: true
+  amplitude_min: 0.9
+  amplitude_max: 1.1
+  baseline_wander_mv: 0.05
+  mains_50hz_mv: 0.02
+  gaussian_noise_mv: 0.01
+  time_shift_ms: 20

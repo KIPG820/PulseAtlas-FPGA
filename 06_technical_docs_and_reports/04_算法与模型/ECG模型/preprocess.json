@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "sample_rate_hz": 500,
+  "input_samples": 5000,
+  "input_unit": "mV",
+  "lead_order": ["I", "II", "III", "aVR", "aVL", "aVF", "V1", "V2", "V3", "V4", "V5", "V6"],
+  "source_filter_reference": "ecg_ip_357/ecg_ip_357/model/filter_ref.py",
+  "filter": {
+    "enabled_stages": ["highpass_dc_blocker", "notch", "lowpass_fir"],
+    "highpass_hz": 0.5,
+    "notch_mode": "biquad",
+    "notch_frequencies_hz": [50.0, 150.0],
+    "notch_q": 20.0,
+    "lowpass_hz": 150.0,
+    "fir_taps": 81,
+    "settling_pad_seconds": 2.0
+  },
+  "normalization": {
+    "method": "per_lead_global_train_fold_mean_std",
+    "clip_sigma": 8.0,
+    "stats_file": "data/cache/normalization.json"
+  },
+  "notes": [
+    "The cache builder applies the project IP3 quantized-coefficient floating reference to PTB-XL mV signals.",
+    "Before using model outputs on board data, verify hardware filter register readback, ADS1298 scale conversion, and lead order against this contract."
+  ]
+}

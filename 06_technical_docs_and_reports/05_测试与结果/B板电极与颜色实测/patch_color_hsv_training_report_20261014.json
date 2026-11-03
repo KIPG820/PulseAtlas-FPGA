@@ -1,0 +1,178 @@
+{
+  "purpose": "HSV circular color-group follow-up after video-group CV identified raw BGR lighting sensitivity",
+  "model_sha256": "d36a9cfbb0f50ec28dd160ece0affff55214c9392bbc6ac6c84de47cbfe822ee",
+  "training_samples": 528,
+  "body_frame_counts": {
+    "test": 39,
+    "train": 391,
+    "val": 68
+  },
+  "excluded_frame_counts": {
+    "test|non_body_scene": 13,
+    "train|non_body_scene": 40,
+    "val|non_body_scene": 73,
+    "train|unreviewed_or_excluded": 17,
+    "train|multi_review_pending": 4
+  },
+  "ambiguous_pairs_from_group_cv": [
+    [
+      "dark",
+      "green"
+    ],
+    [
+      "green",
+      "yellow"
+    ],
+    [
+      "purple",
+      "red"
+    ],
+    [
+      "red",
+      "yellow"
+    ]
+  ],
+  "metrics": {
+    "val": {
+      "samples": 73,
+      "group_counts": {
+        "red": 26,
+        "yellow": 26,
+        "dark": 11,
+        "green": 6,
+        "purple": 4
+      },
+      "accuracy": 1.0,
+      "macro_recall": 1.0,
+      "group_recall": {
+        "red": 1.0,
+        "yellow": 1.0,
+        "dark": 1.0,
+        "green": 1.0,
+        "purple": 1.0
+      },
+      "confusion_true_rows_pred_columns": [
+        [
+          26,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          26,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          11,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          6,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          4
+        ]
+      ],
+      "correct_pad_false_mismatch_candidates": 0,
+      "correct_pad_false_candidate_rate": 0.0,
+      "synthetic_wrong_color_comparisons": 292,
+      "synthetic_mismatch_candidates": 161,
+      "synthetic_candidate_rate": 0.5513698630136986
+    },
+    "test": {
+      "samples": 43,
+      "group_counts": {
+        "red": 21,
+        "yellow": 0,
+        "dark": 0,
+        "green": 22,
+        "purple": 0
+      },
+      "accuracy": 1.0,
+      "macro_recall": 1.0,
+      "group_recall": {
+        "red": 1.0,
+        "yellow": null,
+        "dark": null,
+        "green": 1.0,
+        "purple": null
+      },
+      "confusion_true_rows_pred_columns": [
+        [
+          21,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          22,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "correct_pad_false_mismatch_candidates": 0,
+      "correct_pad_false_candidate_rate": 0.0,
+      "synthetic_wrong_color_comparisons": 172,
+      "synthetic_mismatch_candidates": 86,
+      "synthetic_candidate_rate": 0.5
+    }
+  },
+  "board_datasets": {
+    "val": {
+      "path": "D:\\ECG-fpga\\b_board\\PulseAtlas_B_Vision_ConnectorIntegration_20261014\\patch_color_hsv_board_val_20261014.npz",
+      "bytes": 1179395,
+      "samples": 73
+    },
+    "test": {
+      "path": "D:\\ECG-fpga\\b_board\\PulseAtlas_B_Vision_ConnectorIntegration_20261014\\patch_color_hsv_board_test_20261014.npz",
+      "bytes": 759716,
+      "samples": 43
+    }
+  },
+  "limitations": [
+    "Leave-one-video-group-out cross-validation used training videos only to choose HSV features and fallback pairs.",
+    "Validation and historical test metrics are still same-person development data; the test split has only red and green pad groups.",
+    "Synthetic wrong-color comparisons are permutations of pad crops, not real misplaced-electrode captures.",
+    "Annotated box centers stand in for trusted calibration points; this does not validate live localization, skin contact, electrical continuity, or clinical placement.",
+    "LDA predict_proba values are classifier scores, not medically calibrated probabilities."
+  ]
+}

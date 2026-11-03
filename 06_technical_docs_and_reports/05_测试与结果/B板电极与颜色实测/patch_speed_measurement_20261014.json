@@ -1,0 +1,16 @@
+{
+  "board": "PYNQ-Z2 B, ARMv7 dual-core, 494 MiB physical RAM",
+  "status": "compute-feasibility-only; network has random weights and is not an electrode detector",
+  "architecture": "batch of 10 independent 96x96 RGB patches, four stride-2 convolution blocks, global average pool, 11 logits per patch",
+  "runtime": "board OpenCV 4.2 DNN CPU, FP32",
+  "steady_forward_ms": [118.95, 118.48, 118.43, 118.41, 120.65, 118.49, 118.5, 118.59, 118.77, 118.52, 118.57],
+  "median_steady_forward_ms": 118.52,
+  "process_peak_rss_kib": 74484,
+  "existing_full_frame_electrode_ncnn_mean_ms": 20237.15,
+  "same_existing_full_frame_model_two_thread_mean_ms": 20346.83,
+  "limits": [
+    "The speed probe weights are untrained and cannot yield placement decisions.",
+    "Pose inference, cropping, camera capture, and A/B transport are excluded from this microbenchmark.",
+    "Original electrode photographs are absent from the supplied handoff ZIP, so accuracy cannot yet be measured."
+  ]
+}

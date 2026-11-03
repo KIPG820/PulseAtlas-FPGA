@@ -1,0 +1,11 @@
+PulseAtlas A-board R11 inference gap fix
+Base: A-board R10 scientific display
+- Pause HDMI rendering and TFT transfers only while acquiring the strict 10 s AI window.
+- Keep the ECG DMA drain active and preserve real gap/quality rejection.
+- Resume both displays before the selected PS or FPGA three-run inference.
+- Apply the same display exclusion to the short lead-off contact probe.
+- Log ADC drop and packet backpressure deltas for every accepted window.
+- Skip unused RAW verification records in the live DMA parser.
+- Keep non-contact raw quality masks as diagnostics; frame gaps and LOFF remain blocking.
+- Extend the PL packet block from 256 to 1024 records and use a 32768-word DMA buffer.
+  This reduces simple-DMA re-arm boundaries by 4x while preserving every ECG frame.

@@ -1,0 +1,8 @@
+{
+  "source_frame": "D:\\ECG-fpga\\bld\\board_fps_results\\person_validation_20261007.npz",
+  "raw_max_abs": 0.001129150390625,
+  "raw_mean_abs": 8.40404572954867e-06,
+  "onnx_detections": 0,
+  "ncnn_detections": 0,
+  "class_identities_exact": true
+}

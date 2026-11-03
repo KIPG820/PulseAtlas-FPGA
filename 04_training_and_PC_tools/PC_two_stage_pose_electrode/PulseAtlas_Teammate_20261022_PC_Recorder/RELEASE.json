@@ -1,0 +1,11 @@
+{
+  "release": "PulseAtlas_Teammate_20261022",
+  "source": "Fusion_Contrast_20261022",
+  "selected_epoch": 14,
+  "main_sha256": "a8fbe6ac8a2cdbf2f7fe542e49384be0aab6184936fcd2a75ec7d918b4a88ba1",
+  "first_stage_unchanged": true,
+  "runtime_code_and_models_identical_to_tested_source": true,
+  "temporal_identity_default": true,
+  "raw_training_media_included": false,
+  "portable_paths": true
+}

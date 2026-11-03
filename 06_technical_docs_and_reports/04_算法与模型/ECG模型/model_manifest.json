@@ -1,0 +1,271 @@
+{
+  "model_id": "ptbxl-12lead-resnet1d-fp32-v1",
+  "created_utc": "2026-09-28T10:17:48.521937+00:00",
+  "task": "record-level five-label ECG classification",
+  "architecture": "ECGResNet1D",
+  "parameter_count": 139493,
+  "precision": "FP32",
+  "input": {
+    "shape_per_record": [
+      12,
+      5000
+    ],
+    "sample_rate_hz": 500,
+    "lead_order": [
+      "I",
+      "II",
+      "III",
+      "aVR",
+      "aVL",
+      "aVF",
+      "V1",
+      "V2",
+      "V3",
+      "V4",
+      "V5",
+      "V6"
+    ],
+    "physical_unit": "mV before fixed global normalization"
+  },
+  "outputs": [
+    "NORM",
+    "MI",
+    "STTC",
+    "CD",
+    "HYP"
+  ],
+  "data": {
+    "name": "PhysioNet PTB-XL 1.0.3",
+    "license": "CC BY 4.0",
+    "source_url": "https://physionet.org/content/ptb-xl/1.0.3/",
+    "official_splits": {
+      "train": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "validation": 9,
+      "final_test": 10
+    },
+    "training_records": 17084,
+    "validation_records": 2146,
+    "final_test_records": 2158
+  },
+  "selected_epoch": 24,
+  "fold9_thresholds": {
+    "NORM": 0.40330854058265686,
+    "MI": 0.5587114691734314,
+    "STTC": 0.45289596915245056,
+    "CD": 0.7257643342018127,
+    "HYP": 0.6686350107192993
+  },
+  "validation_metrics": {
+    "macro_auroc": 0.9327816075315545,
+    "macro_auprc": 0.8181433234512248,
+    "per_class": {
+      "NORM": {
+        "auroc": 0.9444903090807583,
+        "auprc": 0.9289857258570584,
+        "positive_count": 955
+      },
+      "MI": {
+        "auroc": 0.9333206494165398,
+        "auprc": 0.8462958520438677,
+        "positive_count": 540
+      },
+      "STTC": {
+        "auroc": 0.9381028299059819,
+        "auprc": 0.8030075985403605,
+        "positive_count": 528
+      },
+      "CD": {
+        "auroc": 0.9388359671824239,
+        "auprc": 0.8625998276242989,
+        "positive_count": 495
+      },
+      "HYP": {
+        "auroc": 0.9091582820720677,
+        "auprc": 0.6498276131905382,
+        "positive_count": 268
+      }
+    }
+  },
+  "final_test_metrics": {
+    "split": "official PTB-XL fold 10; one final evaluation",
+    "macro_auroc": 0.9311825997333528,
+    "macro_auprc": 0.8273178732028983,
+    "per_class": {
+      "NORM": {
+        "auroc": 0.945239119383725,
+        "auprc": 0.9235777872165442,
+        "positive_count": 963
+      },
+      "MI": {
+        "auroc": 0.936661013116237,
+        "auprc": 0.8564088953535544,
+        "positive_count": 550
+      },
+      "STTC": {
+        "auroc": 0.9382560439547556,
+        "auprc": 0.8412739053700437,
+        "positive_count": 521
+      },
+      "CD": {
+        "auroc": 0.9299668102946315,
+        "auprc": 0.8462073938580135,
+        "positive_count": 496
+      },
+      "HYP": {
+        "auroc": 0.9057900119174155,
+        "auprc": 0.6691213842163355,
+        "positive_count": 262
+      }
+    },
+    "patient_bootstrap_95pct_ci": {
+      "method": "patient-cluster bootstrap, percentile 95% CI",
+      "replicates": 500,
+      "seed": 52,
+      "macro_auroc": [
+        0.9245189590647925,
+        0.9389419246869167
+      ],
+      "macro_auprc": [
+        0.8122258434261874,
+        0.843623148726824
+      ],
+      "per_class": {
+        "NORM": {
+          "auroc": [
+            0.9361606568203145,
+            0.9551327866408148
+          ],
+          "auprc": [
+            0.9092648679151665,
+            0.9400474294684619
+          ]
+        },
+        "MI": {
+          "auroc": [
+            0.9250785802991179,
+            0.9468737504514751
+          ],
+          "auprc": [
+            0.8271716296042998,
+            0.8800248462460571
+          ]
+        },
+        "STTC": {
+          "auroc": [
+            0.9264326566193717,
+            0.9484880281137871
+          ],
+          "auprc": [
+            0.8070204968555676,
+            0.8684752057359171
+          ]
+        },
+        "CD": {
+          "auroc": [
+            0.915131792854266,
+            0.9418985904703343
+          ],
+          "auprc": [
+            0.8175667249835868,
+            0.8700818655398758
+          ]
+        },
+        "HYP": {
+          "auroc": [
+            0.8848466626572628,
+            0.9251805076078142
+          ],
+          "auprc": [
+            0.6118432164087285,
+            0.7236582194358055
+          ]
+        }
+      }
+    },
+    "frozen_threshold_metrics": {
+      "NORM": {
+        "threshold_from_fold9": 0.40330854058265686,
+        "sensitivity": 0.940809968847352,
+        "specificity": 0.801673640167364,
+        "ppv": 0.7926509186351706,
+        "f1": 0.8603988603988604,
+        "tp": 906,
+        "fp": 237,
+        "fn": 57,
+        "tn": 958
+      },
+      "MI": {
+        "threshold_from_fold9": 0.5587114691734314,
+        "sensitivity": 0.8090909090909091,
+        "specificity": 0.9160447761194029,
+        "ppv": 0.7672413793103449,
+        "f1": 0.7876106194690266,
+        "tp": 445,
+        "fp": 135,
+        "fn": 105,
+        "tn": 1473
+      },
+      "STTC": {
+        "threshold_from_fold9": 0.45289596915245056,
+        "sensitivity": 0.8752399232245681,
+        "specificity": 0.8692730604764813,
+        "ppv": 0.6805970149253732,
+        "f1": 0.7657430730478589,
+        "tp": 456,
+        "fp": 214,
+        "fn": 65,
+        "tn": 1423
+      },
+      "CD": {
+        "threshold_from_fold9": 0.7257643342018127,
+        "sensitivity": 0.75,
+        "specificity": 0.927797833935018,
+        "ppv": 0.7560975609756098,
+        "f1": 0.7530364372469636,
+        "tp": 372,
+        "fp": 120,
+        "fn": 124,
+        "tn": 1542
+      },
+      "HYP": {
+        "threshold_from_fold9": 0.6686350107192993,
+        "sensitivity": 0.6564885496183206,
+        "specificity": 0.935126582278481,
+        "ppv": 0.5830508474576271,
+        "f1": 0.6175942549371634,
+        "tp": 172,
+        "fp": 123,
+        "fn": 90,
+        "tn": 1773
+      }
+    }
+  },
+  "runtime": {
+    "python": "3.8.20",
+    "torch": "2.4.1+cu121",
+    "cuda_runtime": "12.1",
+    "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU"
+  },
+  "hashes_sha256": {
+    "checkpoint": "8338f5ec597b18ded2391c76fd1c3a2c6d90df6bc1dbfa1f980deedd4d2b2c80",
+    "preprocess_json": "e0be3811c9a29d6f33275f4d1c30bf03d4d4c72ea98fa5c2873d7ca676d131af",
+    "train_config": "ad503fb1b863e8ab77c7f180fc4772336b40242ef041721348b0a80a2578b205",
+    "normalization": "bdda5ccbdbc35b5391f616f06d222630f37f164b35ac698a717188a9db062db1",
+    "source_manifest": "03762052828111766eef72a3e193d5bbba29c5f6dc99ce0f1d386e378f621282",
+    "fold9_metrics": "74589b55499874b264dffe46463b4dc7a70e0d5dc6cbf653e95ef334103689ab",
+    "fold10_metrics": "ad78521f877e3804e8ffce279a96132ed9ee08c2d2e206544dd867893265379c"
+  },
+  "limitations": [
+    "Public-dataset research and competition result; not clinical validation.",
+    "Labels are recording-level diagnostic superclass labels, not beat-level truth."
+  ]
+}

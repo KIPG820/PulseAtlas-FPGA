@@ -1,0 +1,37 @@
+[
+  {
+    "relative_path": "ps_onnx_pose.py",
+    "sha256": "514ff313695e755c462d4a8e1f059220545def606c917a1f5677cd24464a67f6",
+    "origin": "original handoff board_r12/vision_guide"
+  },
+  {
+    "relative_path": "electrode_placement.py",
+    "sha256": "aef51f268fd9c9c586ef0dfc91276d884dd477f9f9b1084b089dbd20626501d5",
+    "origin": "original handoff board_r12/vision_guide"
+  },
+  {
+    "relative_path": "test_ps_onnx_pose.py",
+    "sha256": "29d6254a6ec3edd04d9dcf7d4e19d33e300a0f2d77fea621da2ad0cd89e3377b",
+    "origin": "original handoff board_r12/vision_guide"
+  },
+  {
+    "relative_path": "models\\yolo11n-pose-cv454.onnx",
+    "sha256": "78543e228d6eeeb3788bc8fd7246c32ccee21ad5e83c0a12e5f1dba17e5ec8db",
+    "origin": "original handoff board_r12/vision_guide"
+  },
+  {
+    "relative_path": "models\\model_manifest.json",
+    "sha256": "abeb01b6923a80894728a734c88c89e579cdbce9dc562d66b09177da4472ac60",
+    "origin": "original handoff board_r12/vision_guide"
+  },
+  {
+    "relative_path": "calibration\\torso_lead_calibration.json",
+    "sha256": "e9720c2421d2167d65cc7cbe24f5f74dfb0c0ed00cd60feba72eb3486244a4dc",
+    "origin": "original handoff board_r12/vision_guide"
+  },
+  {
+    "relative_path": "calibration\\chest_lead_calibration.json",
+    "sha256": "0982cb4f09140a02ef350f872e67860df0e1edc7998951092f815ed879a8f479",
+    "origin": "original handoff board_r12/vision_guide"
+  }
+]

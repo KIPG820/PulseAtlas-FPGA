@@ -1,0 +1,13 @@
+{
+  "board": "PYNQ-Z2 B, ARMv7, 494 MiB physical RAM",
+  "runtime": "NCNN 20260526 native ARMv7 build, one thread, 640x640 FP32",
+  "model": "connector_selected_ncnn_model/model.ncnn.param + model.ncnn.bin",
+  "source_frame": "synthetic black BGR 640x480; no camera device on board",
+  "pose_service_state": "R7 systemd service active, camera absent",
+  "load_seconds": 0.621,
+  "inference_ms": [20489.9, 20264.8, 20209.5],
+  "steady_mean_ms": 20237.15,
+  "process_peak_rss_mib": 198.2,
+  "detections": [0, 0, 0],
+  "conclusion": "Model fits in RAM but is too slow for one-second same-frame placement verdict."
+}

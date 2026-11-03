@@ -1,0 +1,9 @@
+PulseAtlas A-board R10 scientific display
+Base: A-board R9 DMA startup release
+- ECG paper grid uses the real 1000 SPS time window.
+- 12-lead view uses 4 x 3 synchronized 2.5 s segments and a 10 s Lead-II rhythm strip.
+- Beat-to-beat heart-rate trend uses QRS frame timestamps; long gaps remain empty.
+- Spectrogram uses Hann 512, hop 64, 0-100 Hz, fixed -120..-20 dBFS/Hz.
+- HDMI and TFT use the same numerical preparation.
+- Amplitude remains in ADC codes until the analog chain is calibrated.
+- VCG is intentionally not included in this release.

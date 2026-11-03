@@ -1,0 +1,249 @@
+{
+  "metrics": {
+    "strict": {
+      "conf": 0.15,
+      "tp": 7,
+      "fp": 0,
+      "fn": 1,
+      "precision": 1.0,
+      "recall": 0.875,
+      "f1": 0.9333333333333333,
+      "per_class": {
+        "RA": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "LA": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "RL": {
+          "tp": 3,
+          "fp": 0,
+          "fn": 1
+        },
+        "LL": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "V1": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "V2": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "V3": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "V4": {
+          "tp": 4,
+          "fp": 0,
+          "fn": 0
+        },
+        "V5": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "V6": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    "identity_diagnostic": {
+      "agnostic_match_iou": 0.1,
+      "matched": 7,
+      "correct_identity": 7,
+      "identity_accuracy_given_loose_match": 1.0,
+      "truth_boxes": 8,
+      "loose_geometry_recall": 0.875,
+      "confusion_rows_truth_columns_prediction": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          3,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          4,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "names": [
+        "RA",
+        "LA",
+        "RL",
+        "LL",
+        "V1",
+        "V2",
+        "V3",
+        "V4",
+        "V5",
+        "V6",
+        "background"
+      ],
+      "note": "IoU .10 is a loose diagnostic for connector-versus-pad box definitions; never replace strict IoU .50 P/R/F1 with it"
+    }
+  },
+  "identity": {
+    "2": {
+      "truth": 4,
+      "top1": 3,
+      "unambiguous": 3,
+      "missed": 1,
+      "conflicting": 0
+    },
+    "7": {
+      "truth": 4,
+      "top1": 4,
+      "unambiguous": 4,
+      "missed": 0,
+      "conflicting": 0
+    }
+  },
+  "scope": "continuous replay with previous decoded frames at ~15fps; current test targets scored at nearest decoded frame, differs from isolated JPG detector test. Test scene already observed, not blind acceptance. Initial warmup pending and gaps reported, no invented positions."
+}

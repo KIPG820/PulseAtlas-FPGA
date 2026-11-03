@@ -1,0 +1,1203 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Sun Oct 11 20:03:52 2026
+| Host         : KIPG running 64-bit major release  (build 9200)
+| Command      : report_drc -file D:/ECG-fpga/bld/ecg_nn_r14_live_status/routed_drc.rpt
+| Design       : base_wrapper
+| Device       : xc7z020clg400-1
+| Speed File   : -1
+| Design State : Fully Routed
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: checkpoint_synth
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max checks: <unlimited>
+             Checks found: 227
++-----------+----------+------------------------------------------------+--------+
+| Rule      | Severity | Description                                    | Checks |
++-----------+----------+------------------------------------------------+--------+
+| DPIP-1    | Warning  | Input pipelining                               | 23     |
+| DPOP-1    | Warning  | PREG Output pipelining                         | 26     |
+| DPOP-2    | Warning  | MREG Output pipelining                         | 33     |
+| PDCN-1569 | Warning  | LUT equation term check                        | 1      |
+| PDRC-132  | Warning  | SLICE_PairEqSame_A6A5_WARN                     | 16     |
+| PDRC-134  | Warning  | SLICE_PairEqSame_B6B5_WARN                     | 23     |
+| PDRC-136  | Warning  | SLICE_PairEqSame_C6C5_WARN                     | 27     |
+| PDRC-138  | Warning  | SLICE_PairEqSame_D6D5_WARN                     | 31     |
+| PDRC-140  | Warning  | SLICE_PairEqSame_A6A5_WARN                     | 5      |
+| PDRC-142  | Warning  | SLICE_PairEqSame_B6B5_WARN                     | 6      |
+| PDRC-144  | Warning  | SLICE_PairEqSame_C6C5_WARN                     | 8      |
+| PDRC-146  | Warning  | SLICE_PairEqSame_D6D5_WARN                     | 11     |
+| PLIO-6    | Warning  | Placement Constraints Check for IO constraints | 3      |
+| REQP-1617 | Warning  | use_IOB_register                               | 3      |
+| REQP-1840 | Warning  | RAMB18 async control check                     | 4      |
+| RTSTAT-10 | Warning  | No routable loads                              | 1      |
+| REQP-165  | Advisory | writefirst                                     | 1      |
+| REQP-181  | Advisory | writefirst                                     | 5      |
++-----------+----------+------------------------------------------------+--------+
+
+2. REPORT DETAILS
+-----------------
+DPIP-1#1 Warning
+Input pipelining  
+DSP base_i/ecg_classic_filter_0/inst/fir_acc0 input base_i/ecg_classic_filter_0/inst/fir_acc0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#2 Warning
+Input pipelining  
+DSP base_i/ecg_classic_filter_0/inst/pa_r_reg input base_i/ecg_classic_filter_0/inst/pa_r_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#3 Warning
+Input pipelining  
+DSP base_i/ecg_classic_filter_0/inst/u_bq/acc0 input base_i/ecg_classic_filter_0/inst/u_bq/acc0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#4 Warning
+Input pipelining  
+DSP base_i/ecg_classic_filter_0/inst/u_bq/acc0 input base_i/ecg_classic_filter_0/inst/u_bq/acc0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#5 Warning
+Input pipelining  
+DSP base_i/ecg_qrs_0/inst/g_det[0].u_det/u_bq/acc0 input base_i/ecg_qrs_0/inst/g_det[0].u_det/u_bq/acc0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#6 Warning
+Input pipelining  
+DSP base_i/ecg_qrs_0/inst/g_det[0].u_det/u_bq/acc0 input base_i/ecg_qrs_0/inst/g_det[0].u_det/u_bq/acc0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#7 Warning
+Input pipelining  
+DSP base_i/ecg_qrs_0/inst/g_det[1].u_det/u_bq/acc0 input base_i/ecg_qrs_0/inst/g_det[1].u_det/u_bq/acc0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#8 Warning
+Input pipelining  
+DSP base_i/ecg_qrs_0/inst/g_det[1].u_det/u_bq/acc0 input base_i/ecg_qrs_0/inst/g_det[1].u_det/u_bq/acc0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#9 Warning
+Input pipelining  
+DSP base_i/ecg_wavelet_0/inst/acc_a0 input base_i/ecg_wavelet_0/inst/acc_a0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#10 Warning
+Input pipelining  
+DSP base_i/ecg_wavelet_0/inst/acc_a0 input base_i/ecg_wavelet_0/inst/acc_a0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#11 Warning
+Input pipelining  
+DSP base_i/ecg_wavelet_0/inst/acc_a0__0 input base_i/ecg_wavelet_0/inst/acc_a0__0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#12 Warning
+Input pipelining  
+DSP base_i/ecg_wavelet_0/inst/acc_a0__0 input base_i/ecg_wavelet_0/inst/acc_a0__0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#13 Warning
+Input pipelining  
+DSP base_i/ecg_wavelet_0/inst/acc_b0 input base_i/ecg_wavelet_0/inst/acc_b0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#14 Warning
+Input pipelining  
+DSP base_i/ecg_wavelet_0/inst/acc_b0 input base_i/ecg_wavelet_0/inst/acc_b0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#15 Warning
+Input pipelining  
+DSP base_i/nn_accel_0/inst/grp_conv_layer_fu_328/grp_conv_layer_Pipeline_VITIS_LOOP_88_3_VITIS_LOOP_89_4_fu_357/add_ln96_fu_600_p2 input base_i/nn_accel_0/inst/grp_conv_layer_fu_328/grp_conv_layer_Pipeline_VITIS_LOOP_88_3_VITIS_LOOP_89_4_fu_357/add_ln96_fu_600_p2/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#16 Warning
+Input pipelining  
+DSP base_i/nn_accel_0/inst/grp_conv_layer_fu_328/grp_conv_layer_Pipeline_VITIS_LOOP_88_3_VITIS_LOOP_89_4_fu_357/add_ln99_fu_610_p2 input base_i/nn_accel_0/inst/grp_conv_layer_fu_328/grp_conv_layer_Pipeline_VITIS_LOOP_88_3_VITIS_LOOP_89_4_fu_357/add_ln99_fu_610_p2/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#17 Warning
+Input pipelining  
+DSP base_i/nn_accel_0/inst/grp_ecg_nn_accel_Pipeline_VITIS_LOOP_151_1_VITIS_LOOP_153_2_fu_430/mac_muladd_8s_8ns_23s_23_4_1_U110/ecg_nn_accel_mac_muladd_8s_8ns_23s_23_4_1_DSP48_0_U/p_reg_reg input base_i/nn_accel_0/inst/grp_ecg_nn_accel_Pipeline_VITIS_LOOP_151_1_VITIS_LOOP_153_2_fu_430/mac_muladd_8s_8ns_23s_23_4_1_U110/ecg_nn_accel_mac_muladd_8s_8ns_23s_23_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#18 Warning
+Input pipelining  
+DSP base_i/video/hdmi_out/color_convert/inst/mac_muladd_10s_8ns_18s_19_4_1_U4/color_convert_mac_muladd_10s_8ns_18s_19_4_1_DSP48_0_U/p_reg_reg__0 input base_i/video/hdmi_out/color_convert/inst/mac_muladd_10s_8ns_18s_19_4_1_U4/color_convert_mac_muladd_10s_8ns_18s_19_4_1_DSP48_0_U/p_reg_reg__0/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#19 Warning
+Input pipelining  
+DSP base_i/video/hdmi_out/color_convert/inst/mac_muladd_10s_8ns_18s_19_4_1_U5/color_convert_mac_muladd_10s_8ns_18s_19_4_1_DSP48_0_U/p_reg_reg__0 input base_i/video/hdmi_out/color_convert/inst/mac_muladd_10s_8ns_18s_19_4_1_U5/color_convert_mac_muladd_10s_8ns_18s_19_4_1_DSP48_0_U/p_reg_reg__0/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#20 Warning
+Input pipelining  
+DSP base_i/video/hdmi_out/color_convert/inst/mac_muladd_10s_8ns_18s_19_4_1_U6/color_convert_mac_muladd_10s_8ns_18s_19_4_1_DSP48_0_U/p_reg_reg__0 input base_i/video/hdmi_out/color_convert/inst/mac_muladd_10s_8ns_18s_19_4_1_U6/color_convert_mac_muladd_10s_8ns_18s_19_4_1_DSP48_0_U/p_reg_reg__0/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#21 Warning
+Input pipelining  
+DSP base_i/video/hdmi_out/color_convert/inst/mac_muladd_10s_8ns_19s_20_4_1_U7/color_convert_mac_muladd_10s_8ns_19s_20_4_1_DSP48_0_U/p_reg_reg input base_i/video/hdmi_out/color_convert/inst/mac_muladd_10s_8ns_19s_20_4_1_U7/color_convert_mac_muladd_10s_8ns_19s_20_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#22 Warning
+Input pipelining  
+DSP base_i/video/hdmi_out/color_convert/inst/mac_muladd_10s_8ns_19s_20_4_1_U8/color_convert_mac_muladd_10s_8ns_19s_20_4_1_DSP48_0_U/p_reg_reg input base_i/video/hdmi_out/color_convert/inst/mac_muladd_10s_8ns_19s_20_4_1_U8/color_convert_mac_muladd_10s_8ns_19s_20_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#23 Warning
+Input pipelining  
+DSP base_i/video/hdmi_out/color_convert/inst/mac_muladd_10s_8ns_19s_20_4_1_U9/color_convert_mac_muladd_10s_8ns_19s_20_4_1_DSP48_0_U/p_reg_reg input base_i/video/hdmi_out/color_convert/inst/mac_muladd_10s_8ns_19s_20_4_1_U9/color_convert_mac_muladd_10s_8ns_19s_20_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPOP-1#1 Warning
+PREG Output pipelining  
+DSP base_i/ecg_classic_filter_0/inst/fir_acc0 output base_i/ecg_classic_filter_0/inst/fir_acc0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#2 Warning
+PREG Output pipelining  
+DSP base_i/ecg_classic_filter_0/inst/u_bq/acc0 output base_i/ecg_classic_filter_0/inst/u_bq/acc0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#3 Warning
+PREG Output pipelining  
+DSP base_i/ecg_classic_filter_0/inst/u_cb/p_r0 output base_i/ecg_classic_filter_0/inst/u_cb/p_r0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#4 Warning
+PREG Output pipelining  
+DSP base_i/ecg_classic_filter_0/inst/u_cb/p_r0__0 output base_i/ecg_classic_filter_0/inst/u_cb/p_r0__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#5 Warning
+PREG Output pipelining  
+DSP base_i/ecg_classic_filter_0/inst/u_dc/p_r0 output base_i/ecg_classic_filter_0/inst/u_dc/p_r0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#6 Warning
+PREG Output pipelining  
+DSP base_i/ecg_classic_filter_0/inst/u_dc/p_r0__0 output base_i/ecg_classic_filter_0/inst/u_dc/p_r0__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#7 Warning
+PREG Output pipelining  
+DSP base_i/ecg_qrs_0/inst/g_det[0].u_det/sq_r0 output base_i/ecg_qrs_0/inst/g_det[0].u_det/sq_r0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#8 Warning
+PREG Output pipelining  
+DSP base_i/ecg_qrs_0/inst/g_det[0].u_det/sq_r0__0 output base_i/ecg_qrs_0/inst/g_det[0].u_det/sq_r0__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#9 Warning
+PREG Output pipelining  
+DSP base_i/ecg_qrs_0/inst/g_det[0].u_det/sq_r0__1 output base_i/ecg_qrs_0/inst/g_det[0].u_det/sq_r0__1/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#10 Warning
+PREG Output pipelining  
+DSP base_i/ecg_qrs_0/inst/g_det[0].u_det/sq_r0__2 output base_i/ecg_qrs_0/inst/g_det[0].u_det/sq_r0__2/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#11 Warning
+PREG Output pipelining  
+DSP base_i/ecg_qrs_0/inst/g_det[0].u_det/u_bq/acc0 output base_i/ecg_qrs_0/inst/g_det[0].u_det/u_bq/acc0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#12 Warning
+PREG Output pipelining  
+DSP base_i/ecg_qrs_0/inst/g_det[1].u_det/sq_r0 output base_i/ecg_qrs_0/inst/g_det[1].u_det/sq_r0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#13 Warning
+PREG Output pipelining  
+DSP base_i/ecg_qrs_0/inst/g_det[1].u_det/sq_r0__0 output base_i/ecg_qrs_0/inst/g_det[1].u_det/sq_r0__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#14 Warning
+PREG Output pipelining  
+DSP base_i/ecg_qrs_0/inst/g_det[1].u_det/sq_r0__1 output base_i/ecg_qrs_0/inst/g_det[1].u_det/sq_r0__1/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#15 Warning
+PREG Output pipelining  
+DSP base_i/ecg_qrs_0/inst/g_det[1].u_det/sq_r0__2 output base_i/ecg_qrs_0/inst/g_det[1].u_det/sq_r0__2/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#16 Warning
+PREG Output pipelining  
+DSP base_i/ecg_qrs_0/inst/g_det[1].u_det/u_bq/acc0 output base_i/ecg_qrs_0/inst/g_det[1].u_det/u_bq/acc0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#17 Warning
+PREG Output pipelining  
+DSP base_i/ecg_wavelet_0/inst/acc_a0 output base_i/ecg_wavelet_0/inst/acc_a0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#18 Warning
+PREG Output pipelining  
+DSP base_i/ecg_wavelet_0/inst/acc_a0__0 output base_i/ecg_wavelet_0/inst/acc_a0__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#19 Warning
+PREG Output pipelining  
+DSP base_i/ecg_wavelet_0/inst/acc_b0 output base_i/ecg_wavelet_0/inst/acc_b0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#20 Warning
+PREG Output pipelining  
+DSP base_i/nn_accel_0/inst/grp_conv_layer_fu_328/add_ln107_fu_825_p2 output base_i/nn_accel_0/inst/grp_conv_layer_fu_328/add_ln107_fu_825_p2/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#21 Warning
+PREG Output pipelining  
+DSP base_i/nn_accel_0/inst/grp_conv_layer_fu_328/grp_conv_layer_Pipeline_VITIS_LOOP_88_3_VITIS_LOOP_89_4_fu_357/add_ln99_fu_610_p2 output base_i/nn_accel_0/inst/grp_conv_layer_fu_328/grp_conv_layer_Pipeline_VITIS_LOOP_88_3_VITIS_LOOP_89_4_fu_357/add_ln99_fu_610_p2/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#22 Warning
+PREG Output pipelining  
+DSP base_i/nn_accel_0/inst/grp_conv_layer_fu_328/mul_32s_24ns_56_2_1_U50/tmp_product output base_i/nn_accel_0/inst/grp_conv_layer_fu_328/mul_32s_24ns_56_2_1_U50/tmp_product/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#23 Warning
+PREG Output pipelining  
+DSP base_i/nn_accel_0/inst/grp_conv_layer_fu_328/mul_32s_24ns_56_2_1_U51/tmp_product output base_i/nn_accel_0/inst/grp_conv_layer_fu_328/mul_32s_24ns_56_2_1_U51/tmp_product/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#24 Warning
+PREG Output pipelining  
+DSP base_i/nn_accel_0/inst/grp_ecg_nn_accel_Pipeline_VITIS_LOOP_151_1_VITIS_LOOP_153_2_fu_430/mul_24ns_23s_47_1_1_U109/tmp_product output base_i/nn_accel_0/inst/grp_ecg_nn_accel_Pipeline_VITIS_LOOP_151_1_VITIS_LOOP_153_2_fu_430/mul_24ns_23s_47_1_1_U109/tmp_product/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#25 Warning
+PREG Output pipelining  
+DSP base_i/nn_accel_0/inst/grp_stem_layer_fu_314/mul_32s_24ns_56_2_1_U17/tmp_product output base_i/nn_accel_0/inst/grp_stem_layer_fu_314/mul_32s_24ns_56_2_1_U17/tmp_product/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#26 Warning
+PREG Output pipelining  
+DSP base_i/nn_accel_0/inst/grp_stem_layer_fu_314/mul_32s_24ns_56_2_1_U18/tmp_product output base_i/nn_accel_0/inst/grp_stem_layer_fu_314/mul_32s_24ns_56_2_1_U18/tmp_product/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-2#1 Warning
+MREG Output pipelining  
+DSP base_i/ecg_classic_filter_0/inst/u_cb/p_r0 multiplier stage base_i/ecg_classic_filter_0/inst/u_cb/p_r0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#2 Warning
+MREG Output pipelining  
+DSP base_i/ecg_classic_filter_0/inst/u_cb/p_r0__0 multiplier stage base_i/ecg_classic_filter_0/inst/u_cb/p_r0__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#3 Warning
+MREG Output pipelining  
+DSP base_i/ecg_classic_filter_0/inst/u_cb/p_r_reg multiplier stage base_i/ecg_classic_filter_0/inst/u_cb/p_r_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#4 Warning
+MREG Output pipelining  
+DSP base_i/ecg_classic_filter_0/inst/u_cb/p_r_reg__0 multiplier stage base_i/ecg_classic_filter_0/inst/u_cb/p_r_reg__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#5 Warning
+MREG Output pipelining  
+DSP base_i/ecg_classic_filter_0/inst/u_dc/p_r0 multiplier stage base_i/ecg_classic_filter_0/inst/u_dc/p_r0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#6 Warning
+MREG Output pipelining  
+DSP base_i/ecg_classic_filter_0/inst/u_dc/p_r0__0 multiplier stage base_i/ecg_classic_filter_0/inst/u_dc/p_r0__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#7 Warning
+MREG Output pipelining  
+DSP base_i/ecg_classic_filter_0/inst/u_dc/p_r_reg multiplier stage base_i/ecg_classic_filter_0/inst/u_dc/p_r_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#8 Warning
+MREG Output pipelining  
+DSP base_i/ecg_classic_filter_0/inst/u_dc/p_r_reg__0 multiplier stage base_i/ecg_classic_filter_0/inst/u_dc/p_r_reg__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#9 Warning
+MREG Output pipelining  
+DSP base_i/ecg_qrs_0/inst/g_det[0].u_det/sq_r0 multiplier stage base_i/ecg_qrs_0/inst/g_det[0].u_det/sq_r0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#10 Warning
+MREG Output pipelining  
+DSP base_i/ecg_qrs_0/inst/g_det[0].u_det/sq_r0__0 multiplier stage base_i/ecg_qrs_0/inst/g_det[0].u_det/sq_r0__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#11 Warning
+MREG Output pipelining  
+DSP base_i/ecg_qrs_0/inst/g_det[0].u_det/sq_r0__1 multiplier stage base_i/ecg_qrs_0/inst/g_det[0].u_det/sq_r0__1/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#12 Warning
+MREG Output pipelining  
+DSP base_i/ecg_qrs_0/inst/g_det[0].u_det/sq_r0__2 multiplier stage base_i/ecg_qrs_0/inst/g_det[0].u_det/sq_r0__2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#13 Warning
+MREG Output pipelining  
+DSP base_i/ecg_qrs_0/inst/g_det[1].u_det/sq_r0 multiplier stage base_i/ecg_qrs_0/inst/g_det[1].u_det/sq_r0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#14 Warning
+MREG Output pipelining  
+DSP base_i/ecg_qrs_0/inst/g_det[1].u_det/sq_r0__0 multiplier stage base_i/ecg_qrs_0/inst/g_det[1].u_det/sq_r0__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#15 Warning
+MREG Output pipelining  
+DSP base_i/ecg_qrs_0/inst/g_det[1].u_det/sq_r0__1 multiplier stage base_i/ecg_qrs_0/inst/g_det[1].u_det/sq_r0__1/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#16 Warning
+MREG Output pipelining  
+DSP base_i/ecg_qrs_0/inst/g_det[1].u_det/sq_r0__2 multiplier stage base_i/ecg_qrs_0/inst/g_det[1].u_det/sq_r0__2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#17 Warning
+MREG Output pipelining  
+DSP base_i/nn_accel_0/inst/grp_add_relu_fu_390/grp_add_relu_Pipeline_VITIS_LOOP_120_1_fu_118/mul_32ns_9s_41_2_1_U77/buff0_reg multiplier stage base_i/nn_accel_0/inst/grp_add_relu_fu_390/grp_add_relu_Pipeline_VITIS_LOOP_120_1_fu_118/mul_32ns_9s_41_2_1_U77/buff0_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#18 Warning
+MREG Output pipelining  
+DSP base_i/nn_accel_0/inst/grp_add_relu_fu_390/grp_add_relu_Pipeline_VITIS_LOOP_120_1_fu_118/mul_33ns_9s_42_2_1_U78/buff0_reg multiplier stage base_i/nn_accel_0/inst/grp_add_relu_fu_390/grp_add_relu_Pipeline_VITIS_LOOP_120_1_fu_118/mul_33ns_9s_42_2_1_U78/buff0_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#19 Warning
+MREG Output pipelining  
+DSP base_i/nn_accel_0/inst/grp_add_relu_fu_390/mul_ln120_reg_203_reg multiplier stage base_i/nn_accel_0/inst/grp_add_relu_fu_390/mul_ln120_reg_203_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#20 Warning
+MREG Output pipelining  
+DSP base_i/nn_accel_0/inst/grp_conv_layer_fu_328/grp_conv_layer_Pipeline_VITIS_LOOP_88_3_VITIS_LOOP_89_4_fu_357/add_ln96_fu_600_p2 multiplier stage base_i/nn_accel_0/inst/grp_conv_layer_fu_328/grp_conv_layer_Pipeline_VITIS_LOOP_88_3_VITIS_LOOP_89_4_fu_357/add_ln96_fu_600_p2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#21 Warning
+MREG Output pipelining  
+DSP base_i/nn_accel_0/inst/grp_conv_layer_fu_328/mul_32s_24ns_56_2_1_U50/buff0_reg multiplier stage base_i/nn_accel_0/inst/grp_conv_layer_fu_328/mul_32s_24ns_56_2_1_U50/buff0_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#22 Warning
+MREG Output pipelining  
+DSP base_i/nn_accel_0/inst/grp_conv_layer_fu_328/mul_32s_24ns_56_2_1_U50/tmp_product multiplier stage base_i/nn_accel_0/inst/grp_conv_layer_fu_328/mul_32s_24ns_56_2_1_U50/tmp_product/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#23 Warning
+MREG Output pipelining  
+DSP base_i/nn_accel_0/inst/grp_conv_layer_fu_328/mul_32s_24ns_56_2_1_U51/buff0_reg multiplier stage base_i/nn_accel_0/inst/grp_conv_layer_fu_328/mul_32s_24ns_56_2_1_U51/buff0_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#24 Warning
+MREG Output pipelining  
+DSP base_i/nn_accel_0/inst/grp_conv_layer_fu_328/mul_32s_24ns_56_2_1_U51/tmp_product multiplier stage base_i/nn_accel_0/inst/grp_conv_layer_fu_328/mul_32s_24ns_56_2_1_U51/tmp_product/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#25 Warning
+MREG Output pipelining  
+DSP base_i/nn_accel_0/inst/grp_ecg_nn_accel_Pipeline_VITIS_LOOP_151_1_VITIS_LOOP_153_2_fu_430/mul_24ns_23s_47_1_1_U109/tmp_product multiplier stage base_i/nn_accel_0/inst/grp_ecg_nn_accel_Pipeline_VITIS_LOOP_151_1_VITIS_LOOP_153_2_fu_430/mul_24ns_23s_47_1_1_U109/tmp_product/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#26 Warning
+MREG Output pipelining  
+DSP base_i/nn_accel_0/inst/grp_ecg_nn_accel_Pipeline_VITIS_LOOP_151_1_VITIS_LOOP_153_2_fu_430/mul_24ns_23s_47_1_1_U109/tmp_product__0 multiplier stage base_i/nn_accel_0/inst/grp_ecg_nn_accel_Pipeline_VITIS_LOOP_151_1_VITIS_LOOP_153_2_fu_430/mul_24ns_23s_47_1_1_U109/tmp_product__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#27 Warning
+MREG Output pipelining  
+DSP base_i/nn_accel_0/inst/grp_stem_layer_fu_314/mul_32s_24ns_56_2_1_U17/buff0_reg multiplier stage base_i/nn_accel_0/inst/grp_stem_layer_fu_314/mul_32s_24ns_56_2_1_U17/buff0_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#28 Warning
+MREG Output pipelining  
+DSP base_i/nn_accel_0/inst/grp_stem_layer_fu_314/mul_32s_24ns_56_2_1_U17/tmp_product multiplier stage base_i/nn_accel_0/inst/grp_stem_layer_fu_314/mul_32s_24ns_56_2_1_U17/tmp_product/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#29 Warning
+MREG Output pipelining  
+DSP base_i/nn_accel_0/inst/grp_stem_layer_fu_314/mul_32s_24ns_56_2_1_U18/buff0_reg multiplier stage base_i/nn_accel_0/inst/grp_stem_layer_fu_314/mul_32s_24ns_56_2_1_U18/buff0_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#30 Warning
+MREG Output pipelining  
+DSP base_i/nn_accel_0/inst/grp_stem_layer_fu_314/mul_32s_24ns_56_2_1_U18/tmp_product multiplier stage base_i/nn_accel_0/inst/grp_stem_layer_fu_314/mul_32s_24ns_56_2_1_U18/tmp_product/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#31 Warning
+MREG Output pipelining  
+DSP base_i/video/hdmi_out/color_convert/inst/mul_ln32_1_reg_1036_reg multiplier stage base_i/video/hdmi_out/color_convert/inst/mul_ln32_1_reg_1036_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#32 Warning
+MREG Output pipelining  
+DSP base_i/video/hdmi_out/color_convert/inst/mul_ln33_1_reg_1053_reg multiplier stage base_i/video/hdmi_out/color_convert/inst/mul_ln33_1_reg_1053_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#33 Warning
+MREG Output pipelining  
+DSP base_i/video/hdmi_out/color_convert/inst/mul_ln34_1_reg_1063_reg multiplier stage base_i/video/hdmi_out/color_convert/inst/mul_ln34_1_reg_1063_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+PDCN-1569#1 Warning
+LUT equation term check  
+Used physical LUT pin 'A2' of cell base_i/video/axi_mem_intercon/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1 (pin base_i/video/axi_mem_intercon/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1/I1) is not included in the LUT equation: 'O6=(A6)+((~A6)*(~A4)*A1)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+PDRC-132#1 Warning
+SLICE_PairEqSame_A6A5_WARN  
+Luts A6LUT and A5LUT in use in site SLICE_X101Y101 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-132#2 Warning
+SLICE_PairEqSame_A6A5_WARN  
+Luts A6LUT and A5LUT in use in site SLICE_X105Y55 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-132#3 Warning
+SLICE_PairEqSame_A6A5_WARN  
+Luts A6LUT and A5LUT in use in site SLICE_X109Y10 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-132#4 Warning
+SLICE_PairEqSame_A6A5_WARN  
+Luts A6LUT and A5LUT in use in site SLICE_X15Y5 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-132#5 Warning
+SLICE_PairEqSame_A6A5_WARN  
+Luts A6LUT and A5LUT in use in site SLICE_X27Y49 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-132#6 Warning
+SLICE_PairEqSame_A6A5_WARN  
+Luts A6LUT and A5LUT in use in site SLICE_X28Y64 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-132#7 Warning
+SLICE_PairEqSame_A6A5_WARN  
+Luts A6LUT and A5LUT in use in site SLICE_X37Y14 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-132#8 Warning
+SLICE_PairEqSame_A6A5_WARN  
+Luts A6LUT and A5LUT in use in site SLICE_X40Y14 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-132#9 Warning
+SLICE_PairEqSame_A6A5_WARN  
+Luts A6LUT and A5LUT in use in site SLICE_X64Y39 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-132#10 Warning
+SLICE_PairEqSame_A6A5_WARN  
+Luts A6LUT and A5LUT in use in site SLICE_X65Y39 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-132#11 Warning
+SLICE_PairEqSame_A6A5_WARN  
+Luts A6LUT and A5LUT in use in site SLICE_X67Y132 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-132#12 Warning
+SLICE_PairEqSame_A6A5_WARN  
+Luts A6LUT and A5LUT in use in site SLICE_X67Y134 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-132#13 Warning
+SLICE_PairEqSame_A6A5_WARN  
+Luts A6LUT and A5LUT in use in site SLICE_X67Y39 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-132#14 Warning
+SLICE_PairEqSame_A6A5_WARN  
+Luts A6LUT and A5LUT in use in site SLICE_X68Y39 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-132#15 Warning
+SLICE_PairEqSame_A6A5_WARN  
+Luts A6LUT and A5LUT in use in site SLICE_X75Y11 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-132#16 Warning
+SLICE_PairEqSame_A6A5_WARN  
+Luts A6LUT and A5LUT in use in site SLICE_X91Y123 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-134#1 Warning
+SLICE_PairEqSame_B6B5_WARN  
+Luts B6LUT and B5LUT in use in site SLICE_X101Y101 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-134#2 Warning
+SLICE_PairEqSame_B6B5_WARN  
+Luts B6LUT and B5LUT in use in site SLICE_X105Y35 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-134#3 Warning
+SLICE_PairEqSame_B6B5_WARN  
+Luts B6LUT and B5LUT in use in site SLICE_X106Y35 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-134#4 Warning
+SLICE_PairEqSame_B6B5_WARN  
+Luts B6LUT and B5LUT in use in site SLICE_X107Y45 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-134#5 Warning
+SLICE_PairEqSame_B6B5_WARN  
+Luts B6LUT and B5LUT in use in site SLICE_X15Y5 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-134#6 Warning
+SLICE_PairEqSame_B6B5_WARN  
+Luts B6LUT and B5LUT in use in site SLICE_X28Y39 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-134#7 Warning
+SLICE_PairEqSame_B6B5_WARN  
+Luts B6LUT and B5LUT in use in site SLICE_X37Y14 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-134#8 Warning
+SLICE_PairEqSame_B6B5_WARN  
+Luts B6LUT and B5LUT in use in site SLICE_X40Y14 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-134#9 Warning
+SLICE_PairEqSame_B6B5_WARN  
+Luts B6LUT and B5LUT in use in site SLICE_X51Y138 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-134#10 Warning
+SLICE_PairEqSame_B6B5_WARN  
+Luts B6LUT and B5LUT in use in site SLICE_X51Y142 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-134#11 Warning
+SLICE_PairEqSame_B6B5_WARN  
+Luts B6LUT and B5LUT in use in site SLICE_X52Y145 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-134#12 Warning
+SLICE_PairEqSame_B6B5_WARN  
+Luts B6LUT and B5LUT in use in site SLICE_X52Y33 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-134#13 Warning
+SLICE_PairEqSame_B6B5_WARN  
+Luts B6LUT and B5LUT in use in site SLICE_X59Y144 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-134#14 Warning
+SLICE_PairEqSame_B6B5_WARN  
+Luts B6LUT and B5LUT in use in site SLICE_X61Y145 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-134#15 Warning
+SLICE_PairEqSame_B6B5_WARN  
+Luts B6LUT and B5LUT in use in site SLICE_X64Y39 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-134#16 Warning
+SLICE_PairEqSame_B6B5_WARN  
+Luts B6LUT and B5LUT in use in site SLICE_X65Y39 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-134#17 Warning
+SLICE_PairEqSame_B6B5_WARN  
+Luts B6LUT and B5LUT in use in site SLICE_X68Y39 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-134#18 Warning
+SLICE_PairEqSame_B6B5_WARN  
+Luts B6LUT and B5LUT in use in site SLICE_X75Y11 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-134#19 Warning
+SLICE_PairEqSame_B6B5_WARN  
+Luts B6LUT and B5LUT in use in site SLICE_X88Y15 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-134#20 Warning
+SLICE_PairEqSame_B6B5_WARN  
+Luts B6LUT and B5LUT in use in site SLICE_X88Y56 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-134#21 Warning
+SLICE_PairEqSame_B6B5_WARN  
+Luts B6LUT and B5LUT in use in site SLICE_X91Y123 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-134#22 Warning
+SLICE_PairEqSame_B6B5_WARN  
+Luts B6LUT and B5LUT in use in site SLICE_X93Y54 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-134#23 Warning
+SLICE_PairEqSame_B6B5_WARN  
+Luts B6LUT and B5LUT in use in site SLICE_X95Y96 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-136#1 Warning
+SLICE_PairEqSame_C6C5_WARN  
+Luts C6LUT and C5LUT in use in site SLICE_X105Y10 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-136#2 Warning
+SLICE_PairEqSame_C6C5_WARN  
+Luts C6LUT and C5LUT in use in site SLICE_X105Y35 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-136#3 Warning
+SLICE_PairEqSame_C6C5_WARN  
+Luts C6LUT and C5LUT in use in site SLICE_X106Y35 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-136#4 Warning
+SLICE_PairEqSame_C6C5_WARN  
+Luts C6LUT and C5LUT in use in site SLICE_X106Y46 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-136#5 Warning
+SLICE_PairEqSame_C6C5_WARN  
+Luts C6LUT and C5LUT in use in site SLICE_X107Y45 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-136#6 Warning
+SLICE_PairEqSame_C6C5_WARN  
+Luts C6LUT and C5LUT in use in site SLICE_X109Y45 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-136#7 Warning
+SLICE_PairEqSame_C6C5_WARN  
+Luts C6LUT and C5LUT in use in site SLICE_X15Y5 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-136#8 Warning
+SLICE_PairEqSame_C6C5_WARN  
+Luts C6LUT and C5LUT in use in site SLICE_X17Y38 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-136#9 Warning
+SLICE_PairEqSame_C6C5_WARN  
+Luts C6LUT and C5LUT in use in site SLICE_X21Y37 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-136#10 Warning
+SLICE_PairEqSame_C6C5_WARN  
+Luts C6LUT and C5LUT in use in site SLICE_X28Y39 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-136#11 Warning
+SLICE_PairEqSame_C6C5_WARN  
+Luts C6LUT and C5LUT in use in site SLICE_X28Y70 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-136#12 Warning
+SLICE_PairEqSame_C6C5_WARN  
+Luts C6LUT and C5LUT in use in site SLICE_X31Y60 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-136#13 Warning
+SLICE_PairEqSame_C6C5_WARN  
+Luts C6LUT and C5LUT in use in site SLICE_X31Y90 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-136#14 Warning
+SLICE_PairEqSame_C6C5_WARN  
+Luts C6LUT and C5LUT in use in site SLICE_X37Y14 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-136#15 Warning
+SLICE_PairEqSame_C6C5_WARN  
+Luts C6LUT and C5LUT in use in site SLICE_X37Y95 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-136#16 Warning
+SLICE_PairEqSame_C6C5_WARN  
+Luts C6LUT and C5LUT in use in site SLICE_X40Y108 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-136#17 Warning
+SLICE_PairEqSame_C6C5_WARN  
+Luts C6LUT and C5LUT in use in site SLICE_X51Y138 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-136#18 Warning
+SLICE_PairEqSame_C6C5_WARN  
+Luts C6LUT and C5LUT in use in site SLICE_X51Y142 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-136#19 Warning
+SLICE_PairEqSame_C6C5_WARN  
+Luts C6LUT and C5LUT in use in site SLICE_X52Y145 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-136#20 Warning
+SLICE_PairEqSame_C6C5_WARN  
+Luts C6LUT and C5LUT in use in site SLICE_X61Y145 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-136#21 Warning
+SLICE_PairEqSame_C6C5_WARN  
+Luts C6LUT and C5LUT in use in site SLICE_X64Y39 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-136#22 Warning
+SLICE_PairEqSame_C6C5_WARN  
+Luts C6LUT and C5LUT in use in site SLICE_X65Y39 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-136#23 Warning
+SLICE_PairEqSame_C6C5_WARN  
+Luts C6LUT and C5LUT in use in site SLICE_X68Y39 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-136#24 Warning
+SLICE_PairEqSame_C6C5_WARN  
+Luts C6LUT and C5LUT in use in site SLICE_X75Y11 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-136#25 Warning
+SLICE_PairEqSame_C6C5_WARN  
+Luts C6LUT and C5LUT in use in site SLICE_X88Y15 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-136#26 Warning
+SLICE_PairEqSame_C6C5_WARN  
+Luts C6LUT and C5LUT in use in site SLICE_X88Y56 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-136#27 Warning
+SLICE_PairEqSame_C6C5_WARN  
+Luts C6LUT and C5LUT in use in site SLICE_X95Y96 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-138#1 Warning
+SLICE_PairEqSame_D6D5_WARN  
+Luts D6LUT and D5LUT in use in site SLICE_X101Y22 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-138#2 Warning
+SLICE_PairEqSame_D6D5_WARN  
+Luts D6LUT and D5LUT in use in site SLICE_X101Y68 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-138#3 Warning
+SLICE_PairEqSame_D6D5_WARN  
+Luts D6LUT and D5LUT in use in site SLICE_X105Y35 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-138#4 Warning
+SLICE_PairEqSame_D6D5_WARN  
+Luts D6LUT and D5LUT in use in site SLICE_X106Y35 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-138#5 Warning
+SLICE_PairEqSame_D6D5_WARN  
+Luts D6LUT and D5LUT in use in site SLICE_X106Y38 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-138#6 Warning
+SLICE_PairEqSame_D6D5_WARN  
+Luts D6LUT and D5LUT in use in site SLICE_X106Y46 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-138#7 Warning
+SLICE_PairEqSame_D6D5_WARN  
+Luts D6LUT and D5LUT in use in site SLICE_X107Y38 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-138#8 Warning
+SLICE_PairEqSame_D6D5_WARN  
+Luts D6LUT and D5LUT in use in site SLICE_X107Y45 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-138#9 Warning
+SLICE_PairEqSame_D6D5_WARN  
+Luts D6LUT and D5LUT in use in site SLICE_X13Y43 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-138#10 Warning
+SLICE_PairEqSame_D6D5_WARN  
+Luts D6LUT and D5LUT in use in site SLICE_X17Y38 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-138#11 Warning
+SLICE_PairEqSame_D6D5_WARN  
+Luts D6LUT and D5LUT in use in site SLICE_X21Y37 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-138#12 Warning
+SLICE_PairEqSame_D6D5_WARN  
+Luts D6LUT and D5LUT in use in site SLICE_X28Y70 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-138#13 Warning
+SLICE_PairEqSame_D6D5_WARN  
+Luts D6LUT and D5LUT in use in site SLICE_X31Y60 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-138#14 Warning
+SLICE_PairEqSame_D6D5_WARN  
+Luts D6LUT and D5LUT in use in site SLICE_X31Y90 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-138#15 Warning
+SLICE_PairEqSame_D6D5_WARN  
+Luts D6LUT and D5LUT in use in site SLICE_X37Y14 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-138#16 Warning
+SLICE_PairEqSame_D6D5_WARN  
+Luts D6LUT and D5LUT in use in site SLICE_X43Y82 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-138#17 Warning
+SLICE_PairEqSame_D6D5_WARN  
+Luts D6LUT and D5LUT in use in site SLICE_X43Y89 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-138#18 Warning
+SLICE_PairEqSame_D6D5_WARN  
+Luts D6LUT and D5LUT in use in site SLICE_X51Y138 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-138#19 Warning
+SLICE_PairEqSame_D6D5_WARN  
+Luts D6LUT and D5LUT in use in site SLICE_X51Y142 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-138#20 Warning
+SLICE_PairEqSame_D6D5_WARN  
+Luts D6LUT and D5LUT in use in site SLICE_X52Y145 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-138#21 Warning
+SLICE_PairEqSame_D6D5_WARN  
+Luts D6LUT and D5LUT in use in site SLICE_X55Y89 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-138#22 Warning
+SLICE_PairEqSame_D6D5_WARN  
+Luts D6LUT and D5LUT in use in site SLICE_X57Y114 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-138#23 Warning
+SLICE_PairEqSame_D6D5_WARN  
+Luts D6LUT and D5LUT in use in site SLICE_X61Y145 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-138#24 Warning
+SLICE_PairEqSame_D6D5_WARN  
+Luts D6LUT and D5LUT in use in site SLICE_X64Y39 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-138#25 Warning
+SLICE_PairEqSame_D6D5_WARN  
+Luts D6LUT and D5LUT in use in site SLICE_X68Y39 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-138#26 Warning
+SLICE_PairEqSame_D6D5_WARN  
+Luts D6LUT and D5LUT in use in site SLICE_X75Y11 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-138#27 Warning
+SLICE_PairEqSame_D6D5_WARN  
+Luts D6LUT and D5LUT in use in site SLICE_X88Y15 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-138#28 Warning
+SLICE_PairEqSame_D6D5_WARN  
+Luts D6LUT and D5LUT in use in site SLICE_X88Y71 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-138#29 Warning
+SLICE_PairEqSame_D6D5_WARN  
+Luts D6LUT and D5LUT in use in site SLICE_X88Y73 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-138#30 Warning
+SLICE_PairEqSame_D6D5_WARN  
+Luts D6LUT and D5LUT in use in site SLICE_X95Y96 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-138#31 Warning
+SLICE_PairEqSame_D6D5_WARN  
+Luts D6LUT and D5LUT in use in site SLICE_X99Y87 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-140#1 Warning
+SLICE_PairEqSame_A6A5_WARN  
+Luts A6LUT and A5LUT in use in site SLICE_X16Y4 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-140#2 Warning
+SLICE_PairEqSame_A6A5_WARN  
+Luts A6LUT and A5LUT in use in site SLICE_X18Y5 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-140#3 Warning
+SLICE_PairEqSame_A6A5_WARN  
+Luts A6LUT and A5LUT in use in site SLICE_X50Y39 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-140#4 Warning
+SLICE_PairEqSame_A6A5_WARN  
+Luts A6LUT and A5LUT in use in site SLICE_X6Y19 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-140#5 Warning
+SLICE_PairEqSame_A6A5_WARN  
+Luts A6LUT and A5LUT in use in site SLICE_X94Y8 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-142#1 Warning
+SLICE_PairEqSame_B6B5_WARN  
+Luts B6LUT and B5LUT in use in site SLICE_X104Y45 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-142#2 Warning
+SLICE_PairEqSame_B6B5_WARN  
+Luts B6LUT and B5LUT in use in site SLICE_X18Y5 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-142#3 Warning
+SLICE_PairEqSame_B6B5_WARN  
+Luts B6LUT and B5LUT in use in site SLICE_X20Y35 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-142#4 Warning
+SLICE_PairEqSame_B6B5_WARN  
+Luts B6LUT and B5LUT in use in site SLICE_X4Y9 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-142#5 Warning
+SLICE_PairEqSame_B6B5_WARN  
+Luts B6LUT and B5LUT in use in site SLICE_X50Y145 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-142#6 Warning
+SLICE_PairEqSame_B6B5_WARN  
+Luts B6LUT and B5LUT in use in site SLICE_X58Y137 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-144#1 Warning
+SLICE_PairEqSame_C6C5_WARN  
+Luts C6LUT and C5LUT in use in site SLICE_X104Y98 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-144#2 Warning
+SLICE_PairEqSame_C6C5_WARN  
+Luts C6LUT and C5LUT in use in site SLICE_X18Y5 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-144#3 Warning
+SLICE_PairEqSame_C6C5_WARN  
+Luts C6LUT and C5LUT in use in site SLICE_X22Y44 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-144#4 Warning
+SLICE_PairEqSame_C6C5_WARN  
+Luts C6LUT and C5LUT in use in site SLICE_X32Y88 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-144#5 Warning
+SLICE_PairEqSame_C6C5_WARN  
+Luts C6LUT and C5LUT in use in site SLICE_X36Y39 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-144#6 Warning
+SLICE_PairEqSame_C6C5_WARN  
+Luts C6LUT and C5LUT in use in site SLICE_X4Y9 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-144#7 Warning
+SLICE_PairEqSame_C6C5_WARN  
+Luts C6LUT and C5LUT in use in site SLICE_X50Y145 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-144#8 Warning
+SLICE_PairEqSame_C6C5_WARN  
+Luts C6LUT and C5LUT in use in site SLICE_X92Y22 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-146#1 Warning
+SLICE_PairEqSame_D6D5_WARN  
+Luts D6LUT and D5LUT in use in site SLICE_X104Y98 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-146#2 Warning
+SLICE_PairEqSame_D6D5_WARN  
+Luts D6LUT and D5LUT in use in site SLICE_X112Y117 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-146#3 Warning
+SLICE_PairEqSame_D6D5_WARN  
+Luts D6LUT and D5LUT in use in site SLICE_X18Y5 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-146#4 Warning
+SLICE_PairEqSame_D6D5_WARN  
+Luts D6LUT and D5LUT in use in site SLICE_X22Y44 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-146#5 Warning
+SLICE_PairEqSame_D6D5_WARN  
+Luts D6LUT and D5LUT in use in site SLICE_X32Y88 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-146#6 Warning
+SLICE_PairEqSame_D6D5_WARN  
+Luts D6LUT and D5LUT in use in site SLICE_X36Y39 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-146#7 Warning
+SLICE_PairEqSame_D6D5_WARN  
+Luts D6LUT and D5LUT in use in site SLICE_X4Y9 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-146#8 Warning
+SLICE_PairEqSame_D6D5_WARN  
+Luts D6LUT and D5LUT in use in site SLICE_X86Y71 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-146#9 Warning
+SLICE_PairEqSame_D6D5_WARN  
+Luts D6LUT and D5LUT in use in site SLICE_X8Y8 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-146#10 Warning
+SLICE_PairEqSame_D6D5_WARN  
+Luts D6LUT and D5LUT in use in site SLICE_X92Y22 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-146#11 Warning
+SLICE_PairEqSame_D6D5_WARN  
+Luts D6LUT and D5LUT in use in site SLICE_X96Y53 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PLIO-6#1 Warning
+Placement Constraints Check for IO constraints  
+Invalid constraint on register base_i/iop_arduino/tft_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/IO0_I_REG. It has the property IOB=TRUE, but it is not driving or driven by any IO element.
+Related violations: <none>
+
+PLIO-6#2 Warning
+Placement Constraints Check for IO constraints  
+Invalid constraint on register base_i/iop_arduino/tft_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/IO1_I_REG. It has the property IOB=TRUE, but it is not driving or driven by any IO element.
+Related violations: <none>
+
+PLIO-6#3 Warning
+Placement Constraints Check for IO constraints  
+Invalid constraint on register base_i/iop_arduino/tft_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/LOGIC_FOR_MD_0_GEN.SPI_MODULE_I/RATIO_NOT_EQUAL_4_GENERATE.SCK_O_NQ_4_NO_STARTUP_USED.SCK_O_NE_4_FDRE_INST. It has the property IOB=TRUE, but it is not driving or driven by any IO element.
+Related violations: <none>
+
+REQP-1617#1 Warning
+use_IOB_register  
+The FDRE cell base_i/iop_arduino/tft_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/IO0_I_REG has IOB set to TRUE, but does not connect directly to an IO cell. Remove the constraint or ensure the FDRE is properly connected to an IO.
+Related violations: <none>
+
+REQP-1617#2 Warning
+use_IOB_register  
+The FDRE cell base_i/iop_arduino/tft_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/IO1_I_REG has IOB set to TRUE, but does not connect directly to an IO cell. Remove the constraint or ensure the FDRE is properly connected to an IO.
+Related violations: <none>
+
+REQP-1617#3 Warning
+use_IOB_register  
+The FDRE cell base_i/iop_arduino/tft_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/LOGIC_FOR_MD_0_GEN.SPI_MODULE_I/RATIO_NOT_EQUAL_4_GENERATE.SCK_O_NQ_4_NO_STARTUP_USED.SCK_O_NE_4_FDRE_INST has IOB set to TRUE, but does not connect directly to an IO cell. Remove the constraint or ensure the FDRE is properly connected to an IO.
+Related violations: <none>
+
+REQP-1840#1 Warning
+RAMB18 async control check  
+The RAMB18E1 base_i/video/axi_vdma/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_NO_SOF.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg has an input control pin base_i/video/axi_vdma/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_NO_SOF.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg/WEBWE[0] (net: base_i/video/axi_vdma/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_NO_SOF.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/wea[0]) which is driven by a register (base_i/video/axi_mem_intercon/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#2 Warning
+RAMB18 async control check  
+The RAMB18E1 base_i/video/axi_vdma/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_NO_SOF.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg has an input control pin base_i/video/axi_vdma/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_NO_SOF.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg/WEBWE[1] (net: base_i/video/axi_vdma/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_NO_SOF.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/wea[0]) which is driven by a register (base_i/video/axi_mem_intercon/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#3 Warning
+RAMB18 async control check  
+The RAMB18E1 base_i/video/axi_vdma/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_NO_SOF.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg has an input control pin base_i/video/axi_vdma/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_NO_SOF.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg/WEBWE[2] (net: base_i/video/axi_vdma/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_NO_SOF.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/wea[0]) which is driven by a register (base_i/video/axi_mem_intercon/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#4 Warning
+RAMB18 async control check  
+The RAMB18E1 base_i/video/axi_vdma/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_NO_SOF.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg has an input control pin base_i/video/axi_vdma/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_NO_SOF.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg/WEBWE[3] (net: base_i/video/axi_vdma/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_NO_SOF.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/wea[0]) which is driven by a register (base_i/video/axi_mem_intercon/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+RTSTAT-10#1 Warning
+No routable loads  
+61 net(s) have no routable loads. The problem bus(es) and/or net(s) are base_i/ecg_ctrl_0/inst/m00_nodes/m00_r_node/inst/mi_handler_m_sc_areset_pipe,
+base_i/ecg_ctrl_0/inst/m00_nodes/m00_w_node/inst/mi_handler_m_sc_areset_pipe,
+base_i/ecg_ctrl_0/inst/m01_nodes/m01_b_node/inst/mi_handler_m_sc_areset_pipe,
+base_i/ecg_ctrl_0/inst/m01_nodes/m01_w_node/inst/mi_handler_m_sc_areset_pipe,
+base_i/ecg_ctrl_0/inst/m02_nodes/m02_r_node/inst/mi_handler_m_sc_areset_pipe,
+base_i/ecg_ctrl_0/inst/m03_nodes/m03_w_node/inst/mi_handler_m_sc_areset_pipe,
+base_i/ecg_ctrl_0/inst/m04_nodes/m04_w_node/inst/mi_handler_m_sc_areset_pipe,
+base_i/ecg_ctrl_0/inst/m06_nodes/m06_aw_node/inst/mi_handler_m_sc_areset_pipe,
+base_i/ecg_ctrl_0/inst/m07_nodes/m07_b_node/inst/mi_handler_m_sc_areset_pipe,
+base_i/ecg_ctrl_0/inst/m07_nodes/m07_r_node/inst/mi_handler_m_sc_areset_pipe,
+base_i/ecg_ctrl_0/inst/m07_nodes/m07_w_node/inst/mi_handler_m_sc_areset_pipe,
+base_i/ecg_ctrl_0/inst/m08_nodes/m08_ar_node/inst/mi_handler_m_sc_areset_pipe,
+base_i/ecg_ctrl_0/inst/s00_nodes/s00_r_node/inst/mi_handler_m_sc_areset_pipe,
+base_i/ecg_ctrl_0/inst/s00_nodes/s00_w_node/inst/mi_handler_m_sc_areset_pipe,
+base_i/video/axi_mem_intercon/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i
+ (the first 15 of 57 listed nets/buses).
+Related violations: <none>
+
+REQP-165#1 Advisory
+writefirst  
+Synchronous clocking is detected for BRAM (base_i/ecg_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_4) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-181#1 Advisory
+writefirst  
+Synchronous clocking is detected for BRAM (base_i/ecg_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-181#2 Advisory
+writefirst  
+Synchronous clocking is detected for BRAM (base_i/ecg_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_1) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-181#3 Advisory
+writefirst  
+Synchronous clocking is detected for BRAM (base_i/ecg_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_2) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-181#4 Advisory
+writefirst  
+Synchronous clocking is detected for BRAM (base_i/ecg_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_3) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-181#5 Advisory
+writefirst  
+Synchronous clocking is detected for BRAM (base_i/nn_dma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+

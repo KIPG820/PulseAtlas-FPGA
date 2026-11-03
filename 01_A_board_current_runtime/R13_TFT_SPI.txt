@@ -1,0 +1,22 @@
+# R13 QRS-RAM + TFT hardware SPI (2026-10-10)
+
+This package retains the R12 UI, ECG IPs, ECG NN, and QRS-RAM replacement.
+It adds an AXI Quad SPI transmitter to the Arduino IOP and routes SPI0
+clock/data to the existing TFT D5/D4 pins. The IOP returns these pins to
+GPIO for GT911 touch after each frame. No wiring change is required.
+
+Validation: D4/D5 GPIO-SPI-GPIO XSIM mux test passed; full design routed with
+WNS +0.151 ns, WHS +0.008 ns, zero routing errors; bitstream DRC had no
+errors. The matching MicroBlaze firmware was compiled on the PYNQ-Z2. The
+application started on the board and acknowledged the first TFT frame.
+In the original R13 40-second TFT-only run, screen transfer averaged
+0.225-0.236 s for about 18-19k changed pixels, with about 1.5 changed TFT
+frames/s; local PS vision inference was 0.240 FPS. A-board R1 removes that
+local PS vision path and uses the future B-board service defined in
+VISION_B_SERVICE_PROTOCOL.md. Visual correctness still requires direct
+observation of the TFT panel.
+The ECG module was unplugged, so live ADS1298 capture is unverified.
+
+On-board backup files in /home/xilinx/pulseatlas_r9_hdmi_tft_r12_release:
+ecg_frontend.bit.pre_r13_spi, ecg_frontend.hwh.pre_r13_spi, and
+tools/tft_pulseatlas_iop.bin.pre_r13_spi.

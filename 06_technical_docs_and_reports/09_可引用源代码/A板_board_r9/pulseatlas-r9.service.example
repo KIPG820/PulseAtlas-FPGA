@@ -1,0 +1,17 @@
+[Unit]
+Description=PulseAtlas ECG interface for the R9 PYNQ-Z2 overlay
+After=network.target jupyter.service
+Conflicts=jupyter.service
+StartLimitIntervalSec=300
+StartLimitBurst=3
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/home/xilinx/pulseatlas_r9
+ExecStart=/usr/local/share/pynq-venv/bin/python /home/xilinx/pulseatlas_r9/run_pulseatlas_r9.py
+Restart=on-failure
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target

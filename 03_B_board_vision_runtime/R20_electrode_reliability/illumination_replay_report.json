@@ -1,0 +1,426 @@
+{
+  "experiment": "synthetic held-out test illumination replay",
+  "scenarios_are_synthetic": true,
+  "results": {
+    "nominal": {
+      "baseline": {
+        "threshold_0.5": {
+          "tp": 41,
+          "fn": 2,
+          "fp": 3,
+          "tn": 57,
+          "pad_recall": 0.9534883720930233,
+          "false_electrode_rate_on_none": 0.05,
+          "balanced_accuracy": 0.9517441860465117
+        },
+        "threshold_0.55": {
+          "tp": 41,
+          "fn": 2,
+          "fp": 3,
+          "tn": 57,
+          "pad_recall": 0.9534883720930233,
+          "false_electrode_rate_on_none": 0.05,
+          "balanced_accuracy": 0.9517441860465117
+        },
+        "threshold_0.6": {
+          "tp": 37,
+          "fn": 6,
+          "fp": 3,
+          "tn": 57,
+          "pad_recall": 0.8604651162790697,
+          "false_electrode_rate_on_none": 0.05,
+          "balanced_accuracy": 0.9052325581395348
+        }
+      },
+      "photometric_finetune": {
+        "threshold_0.5": {
+          "tp": 41,
+          "fn": 2,
+          "fp": 4,
+          "tn": 56,
+          "pad_recall": 0.9534883720930233,
+          "false_electrode_rate_on_none": 0.06666666666666667,
+          "balanced_accuracy": 0.9434108527131784
+        },
+        "threshold_0.55": {
+          "tp": 41,
+          "fn": 2,
+          "fp": 3,
+          "tn": 57,
+          "pad_recall": 0.9534883720930233,
+          "false_electrode_rate_on_none": 0.05,
+          "balanced_accuracy": 0.9517441860465117
+        },
+        "threshold_0.6": {
+          "tp": 38,
+          "fn": 5,
+          "fp": 3,
+          "tn": 57,
+          "pad_recall": 0.8837209302325582,
+          "false_electrode_rate_on_none": 0.05,
+          "balanced_accuracy": 0.916860465116279
+        }
+      }
+    },
+    "dim": {
+      "baseline": {
+        "threshold_0.5": {
+          "tp": 18,
+          "fn": 25,
+          "fp": 2,
+          "tn": 58,
+          "pad_recall": 0.4186046511627907,
+          "false_electrode_rate_on_none": 0.03333333333333333,
+          "balanced_accuracy": 0.6926356589147287
+        },
+        "threshold_0.55": {
+          "tp": 18,
+          "fn": 25,
+          "fp": 2,
+          "tn": 58,
+          "pad_recall": 0.4186046511627907,
+          "false_electrode_rate_on_none": 0.03333333333333333,
+          "balanced_accuracy": 0.6926356589147287
+        },
+        "threshold_0.6": {
+          "tp": 18,
+          "fn": 25,
+          "fp": 1,
+          "tn": 59,
+          "pad_recall": 0.4186046511627907,
+          "false_electrode_rate_on_none": 0.016666666666666666,
+          "balanced_accuracy": 0.700968992248062
+        }
+      },
+      "photometric_finetune": {
+        "threshold_0.5": {
+          "tp": 24,
+          "fn": 19,
+          "fp": 2,
+          "tn": 58,
+          "pad_recall": 0.5581395348837209,
+          "false_electrode_rate_on_none": 0.03333333333333333,
+          "balanced_accuracy": 0.7624031007751938
+        },
+        "threshold_0.55": {
+          "tp": 20,
+          "fn": 23,
+          "fp": 2,
+          "tn": 58,
+          "pad_recall": 0.46511627906976744,
+          "false_electrode_rate_on_none": 0.03333333333333333,
+          "balanced_accuracy": 0.7158914728682171
+        },
+        "threshold_0.6": {
+          "tp": 19,
+          "fn": 24,
+          "fp": 2,
+          "tn": 58,
+          "pad_recall": 0.4418604651162791,
+          "false_electrode_rate_on_none": 0.03333333333333333,
+          "balanced_accuracy": 0.7042635658914729
+        }
+      }
+    },
+    "bright": {
+      "baseline": {
+        "threshold_0.5": {
+          "tp": 43,
+          "fn": 0,
+          "fp": 5,
+          "tn": 55,
+          "pad_recall": 1.0,
+          "false_electrode_rate_on_none": 0.08333333333333333,
+          "balanced_accuracy": 0.9583333333333333
+        },
+        "threshold_0.55": {
+          "tp": 43,
+          "fn": 0,
+          "fp": 4,
+          "tn": 56,
+          "pad_recall": 1.0,
+          "false_electrode_rate_on_none": 0.06666666666666667,
+          "balanced_accuracy": 0.9666666666666667
+        },
+        "threshold_0.6": {
+          "tp": 43,
+          "fn": 0,
+          "fp": 3,
+          "tn": 57,
+          "pad_recall": 1.0,
+          "false_electrode_rate_on_none": 0.05,
+          "balanced_accuracy": 0.975
+        }
+      },
+      "photometric_finetune": {
+        "threshold_0.5": {
+          "tp": 43,
+          "fn": 0,
+          "fp": 5,
+          "tn": 55,
+          "pad_recall": 1.0,
+          "false_electrode_rate_on_none": 0.08333333333333333,
+          "balanced_accuracy": 0.9583333333333333
+        },
+        "threshold_0.55": {
+          "tp": 43,
+          "fn": 0,
+          "fp": 5,
+          "tn": 55,
+          "pad_recall": 1.0,
+          "false_electrode_rate_on_none": 0.08333333333333333,
+          "balanced_accuracy": 0.9583333333333333
+        },
+        "threshold_0.6": {
+          "tp": 41,
+          "fn": 2,
+          "fp": 3,
+          "tn": 57,
+          "pad_recall": 0.9534883720930233,
+          "false_electrode_rate_on_none": 0.05,
+          "balanced_accuracy": 0.9517441860465117
+        }
+      }
+    },
+    "warm_white_balance": {
+      "baseline": {
+        "threshold_0.5": {
+          "tp": 43,
+          "fn": 0,
+          "fp": 5,
+          "tn": 55,
+          "pad_recall": 1.0,
+          "false_electrode_rate_on_none": 0.08333333333333333,
+          "balanced_accuracy": 0.9583333333333333
+        },
+        "threshold_0.55": {
+          "tp": 43,
+          "fn": 0,
+          "fp": 4,
+          "tn": 56,
+          "pad_recall": 1.0,
+          "false_electrode_rate_on_none": 0.06666666666666667,
+          "balanced_accuracy": 0.9666666666666667
+        },
+        "threshold_0.6": {
+          "tp": 42,
+          "fn": 1,
+          "fp": 4,
+          "tn": 56,
+          "pad_recall": 0.9767441860465116,
+          "false_electrode_rate_on_none": 0.06666666666666667,
+          "balanced_accuracy": 0.9550387596899225
+        }
+      },
+      "photometric_finetune": {
+        "threshold_0.5": {
+          "tp": 43,
+          "fn": 0,
+          "fp": 4,
+          "tn": 56,
+          "pad_recall": 1.0,
+          "false_electrode_rate_on_none": 0.06666666666666667,
+          "balanced_accuracy": 0.9666666666666667
+        },
+        "threshold_0.55": {
+          "tp": 42,
+          "fn": 1,
+          "fp": 3,
+          "tn": 57,
+          "pad_recall": 0.9767441860465116,
+          "false_electrode_rate_on_none": 0.05,
+          "balanced_accuracy": 0.9633720930232558
+        },
+        "threshold_0.6": {
+          "tp": 41,
+          "fn": 2,
+          "fp": 3,
+          "tn": 57,
+          "pad_recall": 0.9534883720930233,
+          "false_electrode_rate_on_none": 0.05,
+          "balanced_accuracy": 0.9517441860465117
+        }
+      }
+    },
+    "cool_white_balance": {
+      "baseline": {
+        "threshold_0.5": {
+          "tp": 43,
+          "fn": 0,
+          "fp": 6,
+          "tn": 54,
+          "pad_recall": 1.0,
+          "false_electrode_rate_on_none": 0.1,
+          "balanced_accuracy": 0.95
+        },
+        "threshold_0.55": {
+          "tp": 43,
+          "fn": 0,
+          "fp": 6,
+          "tn": 54,
+          "pad_recall": 1.0,
+          "false_electrode_rate_on_none": 0.1,
+          "balanced_accuracy": 0.95
+        },
+        "threshold_0.6": {
+          "tp": 43,
+          "fn": 0,
+          "fp": 5,
+          "tn": 55,
+          "pad_recall": 1.0,
+          "false_electrode_rate_on_none": 0.08333333333333333,
+          "balanced_accuracy": 0.9583333333333333
+        }
+      },
+      "photometric_finetune": {
+        "threshold_0.5": {
+          "tp": 43,
+          "fn": 0,
+          "fp": 15,
+          "tn": 45,
+          "pad_recall": 1.0,
+          "false_electrode_rate_on_none": 0.25,
+          "balanced_accuracy": 0.875
+        },
+        "threshold_0.55": {
+          "tp": 43,
+          "fn": 0,
+          "fp": 10,
+          "tn": 50,
+          "pad_recall": 1.0,
+          "false_electrode_rate_on_none": 0.16666666666666666,
+          "balanced_accuracy": 0.9166666666666667
+        },
+        "threshold_0.6": {
+          "tp": 43,
+          "fn": 0,
+          "fp": 8,
+          "tn": 52,
+          "pad_recall": 1.0,
+          "false_electrode_rate_on_none": 0.13333333333333333,
+          "balanced_accuracy": 0.9333333333333333
+        }
+      }
+    },
+    "dim_warm_gamma": {
+      "baseline": {
+        "threshold_0.5": {
+          "tp": 36,
+          "fn": 7,
+          "fp": 3,
+          "tn": 57,
+          "pad_recall": 0.8372093023255814,
+          "false_electrode_rate_on_none": 0.05,
+          "balanced_accuracy": 0.8936046511627906
+        },
+        "threshold_0.55": {
+          "tp": 33,
+          "fn": 10,
+          "fp": 2,
+          "tn": 58,
+          "pad_recall": 0.7674418604651163,
+          "false_electrode_rate_on_none": 0.03333333333333333,
+          "balanced_accuracy": 0.8670542635658915
+        },
+        "threshold_0.6": {
+          "tp": 30,
+          "fn": 13,
+          "fp": 2,
+          "tn": 58,
+          "pad_recall": 0.6976744186046512,
+          "false_electrode_rate_on_none": 0.03333333333333333,
+          "balanced_accuracy": 0.8321705426356589
+        }
+      },
+      "photometric_finetune": {
+        "threshold_0.5": {
+          "tp": 38,
+          "fn": 5,
+          "fp": 3,
+          "tn": 57,
+          "pad_recall": 0.8837209302325582,
+          "false_electrode_rate_on_none": 0.05,
+          "balanced_accuracy": 0.916860465116279
+        },
+        "threshold_0.55": {
+          "tp": 34,
+          "fn": 9,
+          "fp": 2,
+          "tn": 58,
+          "pad_recall": 0.7906976744186046,
+          "false_electrode_rate_on_none": 0.03333333333333333,
+          "balanced_accuracy": 0.8786821705426356
+        },
+        "threshold_0.6": {
+          "tp": 30,
+          "fn": 13,
+          "fp": 1,
+          "tn": 59,
+          "pad_recall": 0.6976744186046512,
+          "false_electrode_rate_on_none": 0.016666666666666666,
+          "balanced_accuracy": 0.8405038759689922
+        }
+      }
+    },
+    "bright_cool_gamma": {
+      "baseline": {
+        "threshold_0.5": {
+          "tp": 43,
+          "fn": 0,
+          "fp": 6,
+          "tn": 54,
+          "pad_recall": 1.0,
+          "false_electrode_rate_on_none": 0.1,
+          "balanced_accuracy": 0.95
+        },
+        "threshold_0.55": {
+          "tp": 43,
+          "fn": 0,
+          "fp": 5,
+          "tn": 55,
+          "pad_recall": 1.0,
+          "false_electrode_rate_on_none": 0.08333333333333333,
+          "balanced_accuracy": 0.9583333333333333
+        },
+        "threshold_0.6": {
+          "tp": 43,
+          "fn": 0,
+          "fp": 4,
+          "tn": 56,
+          "pad_recall": 1.0,
+          "false_electrode_rate_on_none": 0.06666666666666667,
+          "balanced_accuracy": 0.9666666666666667
+        }
+      },
+      "photometric_finetune": {
+        "threshold_0.5": {
+          "tp": 43,
+          "fn": 0,
+          "fp": 12,
+          "tn": 48,
+          "pad_recall": 1.0,
+          "false_electrode_rate_on_none": 0.2,
+          "balanced_accuracy": 0.9
+        },
+        "threshold_0.55": {
+          "tp": 43,
+          "fn": 0,
+          "fp": 8,
+          "tn": 52,
+          "pad_recall": 1.0,
+          "false_electrode_rate_on_none": 0.13333333333333333,
+          "balanced_accuracy": 0.9333333333333333
+        },
+        "threshold_0.6": {
+          "tp": 43,
+          "fn": 0,
+          "fp": 6,
+          "tn": 54,
+          "pad_recall": 1.0,
+          "false_electrode_rate_on_none": 0.1,
+          "balanced_accuracy": 0.95
+        }
+      }
+    }
+  }
+}

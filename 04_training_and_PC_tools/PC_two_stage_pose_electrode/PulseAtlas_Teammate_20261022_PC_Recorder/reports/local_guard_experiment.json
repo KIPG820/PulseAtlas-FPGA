@@ -1,0 +1,4 @@
+{
+  "not_deployed": true,
+  "reason": "learned local guard did not resolve heldout conflicts; final package uses fine-tuned detector plus temporal identity, not the ROI head"
+}

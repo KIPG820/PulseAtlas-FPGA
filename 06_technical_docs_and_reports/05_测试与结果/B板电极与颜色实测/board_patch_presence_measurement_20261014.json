@@ -1,0 +1,91 @@
+{
+  "date": "2026-10-14",
+  "board": "PYNQ-Z2 B",
+  "board_service_status_after_test": "active",
+  "runtime": "OpenCV DNN 4.2.0, CPU FP32",
+  "model": "D:\\ECG-fpga\\b_board\\PulseAtlas_B_Vision_ConnectorIntegration_20261014\\tiny_patch_presence_batch10.onnx",
+  "model_sha256": "4da02b19d6d58c992d0d870d11b5bd29f120339ce8f18c7bf83ad73a2570357f",
+  "model_bytes": 101543,
+  "architecture": "24,842-parameter 96x96 RGB binary electrode-presence classifier; 2 logits",
+  "input": "batch of ten already-cropped body-region patches from held-out dataset",
+  "runs": [
+    {
+      "threads": 1,
+      "batch_size": 10,
+      "median_batch_forward_ms": 239.79745199903846,
+      "mean_batch_forward_ms": 239.8622108400741,
+      "median_ms_per_patch": 23.979745199903846,
+      "max_abs_logit_diff_vs_torch": 7.152557373046875e-07,
+      "top1_equal": 10,
+      "peak_rss_kib": 94496,
+      "full_test_patches": 103,
+      "full_test_inference_ms": 2649.992992999614,
+      "full_test_accuracy": 0.9223300970873787,
+      "full_test_pad_recall": 0.9534883720930233,
+      "full_test_none_recall": 0.9,
+      "full_test_top1_equal": 103,
+      "full_test_max_abs_logit_diff_vs_torch": 1.1920928955078125e-06,
+      "full_test_confusion_matrix": [
+        [
+          41,
+          2
+        ],
+        [
+          6,
+          54
+        ]
+      ]
+    },
+    {
+      "threads": 2,
+      "batch_size": 10,
+      "median_batch_forward_ms": 122.28258200048003,
+      "mean_batch_forward_ms": 122.7827918798721,
+      "median_ms_per_patch": 12.228258200048003,
+      "max_abs_logit_diff_vs_torch": 7.152557373046875e-07,
+      "top1_equal": 10,
+      "peak_rss_kib": 94760,
+      "full_test_patches": 103,
+      "full_test_inference_ms": 1355.0483330000134,
+      "full_test_accuracy": 0.9223300970873787,
+      "full_test_pad_recall": 0.9534883720930233,
+      "full_test_none_recall": 0.9,
+      "full_test_top1_equal": 103,
+      "full_test_max_abs_logit_diff_vs_torch": 1.1920928955078125e-06,
+      "full_test_confusion_matrix": [
+        [
+          41,
+          2
+        ],
+        [
+          6,
+          54
+        ]
+      ]
+    }
+  ],
+  "accuracy": {
+    "val_body_only": {
+      "patches": 153,
+      "accuracy": 0.9019607843137255,
+      "macro_recall": 0.9014554794520548,
+      "pad_recall": 0.8904109589041096,
+      "none_recall": 0.9125
+    },
+    "test_body_only_historical_internal": {
+      "patches": 103,
+      "accuracy": 0.9223300970873787,
+      "macro_recall": 0.9267441860465117,
+      "pad_recall": 0.9534883720930233,
+      "none_recall": 0.9,
+      "board_opencv_accuracy": 0.9223300970873787,
+      "board_vs_torch_top1_equal": "103/103"
+    }
+  },
+  "limitations": [
+    "The dataset uses one person/capture family; test is historical internal regression, not a fresh blind test.",
+    "This is binary classification on supplied crops; it does not locate electrodes or validate anatomical placement.",
+    "Board timing excludes camera capture, pose inference, ROI generation, preprocessing, and transport.",
+    "USB camera was absent during this benchmark; the existing vision service remained active."
+  ]
+}

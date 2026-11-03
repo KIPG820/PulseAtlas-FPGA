@@ -1,0 +1,21 @@
+Vivado Simulator v2024.2.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe -timescale 1ns/1ps tb_filter_equiv -s filter_equiv 
+Multi-threading is on. Using 26 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package work.ecg_frame_pkg
+Compiling package work.$unit_axi4lite_regfile_sv_312744...
+Compiling module work.axi4lite_regfile
+Compiling module work.ecg_dc_mc
+Compiling module work.ecg_comb_notch_mc
+Compiling module work.ecg_biquad_mc
+Compiling module work.ecg_classic_filter_ip_r9q_defaul...
+Compiling module work.ecg_classic_filter_ip_default
+Compiling module work.tb_filter_equiv
+Built simulation snapshot filter_equiv

@@ -1,0 +1,9 @@
+name: ecg-yolo11
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11.14
+  - pip
+  - pip:
+      - --extra-index-url https://download.pytorch.org/whl/cu118
+      - -r requirements-conda.lock.txt

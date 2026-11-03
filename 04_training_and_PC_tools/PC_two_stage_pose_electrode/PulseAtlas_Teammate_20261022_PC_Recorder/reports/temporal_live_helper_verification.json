@@ -1,0 +1,29 @@
+{
+  "passed": true,
+  "frames": 255,
+  "actual_shipped_live_helper_verified": true,
+  "camera_opened": false,
+  "input": "cached current-frame main detector proposals, exactly the frozen reference stream",
+  "mean_temporal_update_ms": 0.15004117646961224,
+  "p95_temporal_update_ms": 0.2328200000192735,
+  "pending_proposal_occurrences": 61,
+  "stabilized_decisions": 61,
+  "no_boxes_without_current_proposals": true,
+  "track_reset_verified": true,
+  "identity_at_four_scored_times": {
+    "2": {
+      "truth": 4,
+      "top1": 3,
+      "unambiguous": 3,
+      "missed": 1,
+      "conflicting": 0
+    },
+    "7": {
+      "truth": 4,
+      "top1": 4,
+      "unambiguous": 4,
+      "missed": 0,
+      "conflicting": 0
+    }
+  }
+}

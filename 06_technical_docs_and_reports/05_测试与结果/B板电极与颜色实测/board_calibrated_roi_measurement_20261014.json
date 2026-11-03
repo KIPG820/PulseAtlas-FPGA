@@ -1,0 +1,37 @@
+{
+  "date": "2026-10-14",
+  "board": "PYNQ-Z2 B",
+  "service_status_after_test": "active",
+  "service_modified": false,
+  "camera_connected": false,
+  "runtime": "OpenCV DNN 4.2.0, CPU FP32, 2 threads",
+  "model": "tiny_patch_presence_batch10.onnx",
+  "model_bytes": 101543,
+  "model_sha256": "4da02b19d6d58c992d0d870d11b5bd29f120339ce8f18c7bf83ad73a2570357f",
+  "input": {
+    "frame_shape_hwc": [480, 640, 3],
+    "calibrated_points": 10,
+    "static_model_batch": 10,
+    "roi_side_px_min_median_max": [24, 52.5, 137],
+    "point_source": "saved torso/chest calibration ratios projected onto a synthetic torso quadrilateral",
+    "frame_source": "body-scene held-out sample frame resized to 640x480"
+  },
+  "measurement": {
+    "warmup_runs": 5,
+    "measured_runs": 40,
+    "median_end_to_end_ms": 183.04039850045228,
+    "p95_end_to_end_ms": 184.31681059810217,
+    "median_effective_fps": 5.463274819069677,
+    "last_model_forward_ms": 124.97797200194327,
+    "peak_rss_kib": 79032
+  },
+  "board_cleanup": {
+    "temporary_probe_removed": true,
+    "available_memory_after_cleanup_mib": 332
+  },
+  "limitations": [
+    "This is the local crop, preprocessing and model path, not end-to-end camera plus pose runtime FPS.",
+    "The B-board benchmark used a saved frame and synthetic projected calibration points; it was not a live-camera validation.",
+    "The result reports visual pad presence only and does not verify contact, electrical connection, or lead identity."
+  ]
+}

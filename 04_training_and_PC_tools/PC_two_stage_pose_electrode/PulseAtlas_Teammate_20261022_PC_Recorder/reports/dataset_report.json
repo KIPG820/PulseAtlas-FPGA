@@ -1,0 +1,646 @@
+{
+  "passed": true,
+  "train_images": 337,
+  "train_background_images": 12,
+  "train_class_boxes": {
+    "0": 187,
+    "1": 54,
+    "2": 154,
+    "3": 98,
+    "4": 128,
+    "5": 164,
+    "6": 123,
+    "7": 143,
+    "8": 173,
+    "9": 37
+  },
+  "added_views": 90,
+  "paired_unique_parents": 13,
+  "new_val_images": 3,
+  "new_test_images": 4,
+  "old_val_images": 29,
+  "old_legacy_val_images": 19,
+  "old_tests_unchanged": true,
+  "source_automatic_proposals_used": false,
+  "same_video_splits_correlated": true,
+  "manifest": [
+    {
+      "image": "comparison_t002_view0",
+      "parent": "6854f377d994887f81b0c5d4818a2aa4bf6bf14a46cd87b82b215c51b30082c5",
+      "seconds": 2,
+      "kind": "paired_RL_V4",
+      "split": "train"
+    },
+    {
+      "image": "comparison_t002_view1",
+      "parent": "6854f377d994887f81b0c5d4818a2aa4bf6bf14a46cd87b82b215c51b30082c5",
+      "seconds": 2,
+      "kind": "paired_RL_V4",
+      "split": "train"
+    },
+    {
+      "image": "comparison_t002_view2",
+      "parent": "6854f377d994887f81b0c5d4818a2aa4bf6bf14a46cd87b82b215c51b30082c5",
+      "seconds": 2,
+      "kind": "paired_RL_V4",
+      "split": "train"
+    },
+    {
+      "image": "comparison_t002_view3",
+      "parent": "6854f377d994887f81b0c5d4818a2aa4bf6bf14a46cd87b82b215c51b30082c5",
+      "seconds": 2,
+      "kind": "paired_RL_V4",
+      "split": "train"
+    },
+    {
+      "image": "comparison_t002_view4",
+      "parent": "6854f377d994887f81b0c5d4818a2aa4bf6bf14a46cd87b82b215c51b30082c5",
+      "seconds": 2,
+      "kind": "paired_RL_V4",
+      "split": "train"
+    },
+    {
+      "image": "comparison_t002_view5",
+      "parent": "6854f377d994887f81b0c5d4818a2aa4bf6bf14a46cd87b82b215c51b30082c5",
+      "seconds": 2,
+      "kind": "paired_RL_V4",
+      "split": "train"
+    },
+    {
+      "image": "comparison_t004_view0",
+      "parent": "a2813da538e7b681b6d4c268514e91bdb973151c93895e55728cdec7f0705e38",
+      "seconds": 4,
+      "kind": "paired_RL_V4",
+      "split": "train"
+    },
+    {
+      "image": "comparison_t004_view1",
+      "parent": "a2813da538e7b681b6d4c268514e91bdb973151c93895e55728cdec7f0705e38",
+      "seconds": 4,
+      "kind": "paired_RL_V4",
+      "split": "train"
+    },
+    {
+      "image": "comparison_t004_view2",
+      "parent": "a2813da538e7b681b6d4c268514e91bdb973151c93895e55728cdec7f0705e38",
+      "seconds": 4,
+      "kind": "paired_RL_V4",
+      "split": "train"
+    },
+    {
+      "image": "comparison_t004_view3",
+      "parent": "a2813da538e7b681b6d4c268514e91bdb973151c93895e55728cdec7f0705e38",
+      "seconds": 4,
+      "kind": "paired_RL_V4",
+      "split": "train"
+    },
+    {
+      "image": "comparison_t004_view4",
+      "parent": "a2813da538e7b681b6d4c268514e91bdb973151c93895e55728cdec7f0705e38",
+      "seconds": 4,
+      "kind": "paired_RL_V4",
+      "split": "train"
+    },
+    {
+      "image": "comparison_t004_view5",
+      "parent": "a2813da538e7b681b6d4c268514e91bdb973151c93895e55728cdec7f0705e38",
+      "seconds": 4,
+      "kind": "paired_RL_V4",
+      "split": "train"
+    },
+    {
+      "image": "comparison_t006_view0",
+      "parent": "c3aeb573718eae9d18c7dc9a99d93300bd7e0a99e825f2594f302e95ad18dc58",
+      "seconds": 6,
+      "kind": "paired_RL_V4",
+      "split": "train"
+    },
+    {
+      "image": "comparison_t006_view1",
+      "parent": "c3aeb573718eae9d18c7dc9a99d93300bd7e0a99e825f2594f302e95ad18dc58",
+      "seconds": 6,
+      "kind": "paired_RL_V4",
+      "split": "train"
+    },
+    {
+      "image": "comparison_t006_view2",
+      "parent": "c3aeb573718eae9d18c7dc9a99d93300bd7e0a99e825f2594f302e95ad18dc58",
+      "seconds": 6,
+      "kind": "paired_RL_V4",
+      "split": "train"
+    },
+    {
+      "image": "comparison_t006_view3",
+      "parent": "c3aeb573718eae9d18c7dc9a99d93300bd7e0a99e825f2594f302e95ad18dc58",
+      "seconds": 6,
+      "kind": "paired_RL_V4",
+      "split": "train"
+    },
+    {
+      "image": "comparison_t006_view4",
+      "parent": "c3aeb573718eae9d18c7dc9a99d93300bd7e0a99e825f2594f302e95ad18dc58",
+      "seconds": 6,
+      "kind": "paired_RL_V4",
+      "split": "train"
+    },
+    {
+      "image": "comparison_t006_view5",
+      "parent": "c3aeb573718eae9d18c7dc9a99d93300bd7e0a99e825f2594f302e95ad18dc58",
+      "seconds": 6,
+      "kind": "paired_RL_V4",
+      "split": "train"
+    },
+    {
+      "image": "comparison_t008_view0",
+      "parent": "44477bb5545b79e2c7d57333980bee43e48442fab8c20adca476b22d64c62edb",
+      "seconds": 8,
+      "kind": "paired_RL_V4",
+      "split": "train"
+    },
+    {
+      "image": "comparison_t008_view1",
+      "parent": "44477bb5545b79e2c7d57333980bee43e48442fab8c20adca476b22d64c62edb",
+      "seconds": 8,
+      "kind": "paired_RL_V4",
+      "split": "train"
+    },
+    {
+      "image": "comparison_t008_view2",
+      "parent": "44477bb5545b79e2c7d57333980bee43e48442fab8c20adca476b22d64c62edb",
+      "seconds": 8,
+      "kind": "paired_RL_V4",
+      "split": "train"
+    },
+    {
+      "image": "comparison_t008_view3",
+      "parent": "44477bb5545b79e2c7d57333980bee43e48442fab8c20adca476b22d64c62edb",
+      "seconds": 8,
+      "kind": "paired_RL_V4",
+      "split": "train"
+    },
+    {
+      "image": "comparison_t008_view4",
+      "parent": "44477bb5545b79e2c7d57333980bee43e48442fab8c20adca476b22d64c62edb",
+      "seconds": 8,
+      "kind": "paired_RL_V4",
+      "split": "train"
+    },
+    {
+      "image": "comparison_t008_view5",
+      "parent": "44477bb5545b79e2c7d57333980bee43e48442fab8c20adca476b22d64c62edb",
+      "seconds": 8,
+      "kind": "paired_RL_V4",
+      "split": "train"
+    },
+    {
+      "image": "comparison_t010_view0",
+      "parent": "15e9e229d648634e0b290f475d391e31ec62baaa604fbebda5533c8579f2d017",
+      "seconds": 10,
+      "kind": "paired_RL_V4",
+      "split": "train"
+    },
+    {
+      "image": "comparison_t010_view1",
+      "parent": "15e9e229d648634e0b290f475d391e31ec62baaa604fbebda5533c8579f2d017",
+      "seconds": 10,
+      "kind": "paired_RL_V4",
+      "split": "train"
+    },
+    {
+      "image": "comparison_t010_view2",
+      "parent": "15e9e229d648634e0b290f475d391e31ec62baaa604fbebda5533c8579f2d017",
+      "seconds": 10,
+      "kind": "paired_RL_V4",
+      "split": "train"
+    },
+    {
+      "image": "comparison_t010_view3",
+      "parent": "15e9e229d648634e0b290f475d391e31ec62baaa604fbebda5533c8579f2d017",
+      "seconds": 10,
+      "kind": "paired_RL_V4",
+      "split": "train"
+    },
+    {
+      "image": "comparison_t010_view4",
+      "parent": "15e9e229d648634e0b290f475d391e31ec62baaa604fbebda5533c8579f2d017",
+      "seconds": 10,
+      "kind": "paired_RL_V4",
+      "split": "train"
+    },
+    {
+      "image": "comparison_t010_view5",
+      "parent": "15e9e229d648634e0b290f475d391e31ec62baaa604fbebda5533c8579f2d017",
+      "seconds": 10,
+      "kind": "paired_RL_V4",
+      "split": "train"
+    },
+    {
+      "image": "comparison_t012_view0",
+      "parent": "f4abadbb6b7a52a608896350d81c966457a2158fd855a0aece09989f6cbb76b7",
+      "seconds": 12,
+      "kind": "paired_RL_V4",
+      "split": "train"
+    },
+    {
+      "image": "comparison_t012_view1",
+      "parent": "f4abadbb6b7a52a608896350d81c966457a2158fd855a0aece09989f6cbb76b7",
+      "seconds": 12,
+      "kind": "paired_RL_V4",
+      "split": "train"
+    },
+    {
+      "image": "comparison_t012_view2",
+      "parent": "f4abadbb6b7a52a608896350d81c966457a2158fd855a0aece09989f6cbb76b7",
+      "seconds": 12,
+      "kind": "paired_RL_V4",
+      "split": "train"
+    },
+    {
+      "image": "comparison_t012_view3",
+      "parent": "f4abadbb6b7a52a608896350d81c966457a2158fd855a0aece09989f6cbb76b7",
+      "seconds": 12,
+      "kind": "paired_RL_V4",
+      "split": "train"
+    },
+    {
+      "image": "comparison_t012_view4",
+      "parent": "f4abadbb6b7a52a608896350d81c966457a2158fd855a0aece09989f6cbb76b7",
+      "seconds": 12,
+      "kind": "paired_RL_V4",
+      "split": "train"
+    },
+    {
+      "image": "comparison_t012_view5",
+      "parent": "f4abadbb6b7a52a608896350d81c966457a2158fd855a0aece09989f6cbb76b7",
+      "seconds": 12,
+      "kind": "paired_RL_V4",
+      "split": "train"
+    },
+    {
+      "image": "comparison_t014_view0",
+      "parent": "825ea8202abbc20ce0bbfa35b2e9f4e72b2f49b5ec0bf41aa2517d703c931333",
+      "seconds": 14,
+      "kind": "paired_RL_V4",
+      "split": "train"
+    },
+    {
+      "image": "comparison_t014_view1",
+      "parent": "825ea8202abbc20ce0bbfa35b2e9f4e72b2f49b5ec0bf41aa2517d703c931333",
+      "seconds": 14,
+      "kind": "paired_RL_V4",
+      "split": "train"
+    },
+    {
+      "image": "comparison_t014_view2",
+      "parent": "825ea8202abbc20ce0bbfa35b2e9f4e72b2f49b5ec0bf41aa2517d703c931333",
+      "seconds": 14,
+      "kind": "paired_RL_V4",
+      "split": "train"
+    },
+    {
+      "image": "comparison_t014_view3",
+      "parent": "825ea8202abbc20ce0bbfa35b2e9f4e72b2f49b5ec0bf41aa2517d703c931333",
+      "seconds": 14,
+      "kind": "paired_RL_V4",
+      "split": "train"
+    },
+    {
+      "image": "comparison_t014_view4",
+      "parent": "825ea8202abbc20ce0bbfa35b2e9f4e72b2f49b5ec0bf41aa2517d703c931333",
+      "seconds": 14,
+      "kind": "paired_RL_V4",
+      "split": "train"
+    },
+    {
+      "image": "comparison_t014_view5",
+      "parent": "825ea8202abbc20ce0bbfa35b2e9f4e72b2f49b5ec0bf41aa2517d703c931333",
+      "seconds": 14,
+      "kind": "paired_RL_V4",
+      "split": "train"
+    },
+    {
+      "image": "comparison_t016_view0",
+      "parent": "59a4bb14ab48433988f91c33f8a677c767bad7f02fc4d9f1dfb509892c991fa5",
+      "seconds": 16,
+      "kind": "paired_RL_V4",
+      "split": "train"
+    },
+    {
+      "image": "comparison_t016_view1",
+      "parent": "59a4bb14ab48433988f91c33f8a677c767bad7f02fc4d9f1dfb509892c991fa5",
+      "seconds": 16,
+      "kind": "paired_RL_V4",
+      "split": "train"
+    },
+    {
+      "image": "comparison_t016_view2",
+      "parent": "59a4bb14ab48433988f91c33f8a677c767bad7f02fc4d9f1dfb509892c991fa5",
+      "seconds": 16,
+      "kind": "paired_RL_V4",
+      "split": "train"
+    },
+    {
+      "image": "comparison_t016_view3",
+      "parent": "59a4bb14ab48433988f91c33f8a677c767bad7f02fc4d9f1dfb509892c991fa5",
+      "seconds": 16,
+      "kind": "paired_RL_V4",
+      "split": "train"
+    },
+    {
+      "image": "comparison_t016_view4",
+      "parent": "59a4bb14ab48433988f91c33f8a677c767bad7f02fc4d9f1dfb509892c991fa5",
+      "seconds": 16,
+      "kind": "paired_RL_V4",
+      "split": "train"
+    },
+    {
+      "image": "comparison_t016_view5",
+      "parent": "59a4bb14ab48433988f91c33f8a677c767bad7f02fc4d9f1dfb509892c991fa5",
+      "seconds": 16,
+      "kind": "paired_RL_V4",
+      "split": "train"
+    },
+    {
+      "image": "comparison_t018_view0",
+      "parent": "7817ae11c11c1efe083ab9b5f7a2245e8829c3066dc55421b028a01507919fb0",
+      "seconds": 18,
+      "kind": "paired_RL_V4",
+      "split": "train"
+    },
+    {
+      "image": "comparison_t018_view1",
+      "parent": "7817ae11c11c1efe083ab9b5f7a2245e8829c3066dc55421b028a01507919fb0",
+      "seconds": 18,
+      "kind": "paired_RL_V4",
+      "split": "train"
+    },
+    {
+      "image": "comparison_t018_view2",
+      "parent": "7817ae11c11c1efe083ab9b5f7a2245e8829c3066dc55421b028a01507919fb0",
+      "seconds": 18,
+      "kind": "paired_RL_V4",
+      "split": "train"
+    },
+    {
+      "image": "comparison_t018_view3",
+      "parent": "7817ae11c11c1efe083ab9b5f7a2245e8829c3066dc55421b028a01507919fb0",
+      "seconds": 18,
+      "kind": "paired_RL_V4",
+      "split": "train"
+    },
+    {
+      "image": "comparison_t018_view4",
+      "parent": "7817ae11c11c1efe083ab9b5f7a2245e8829c3066dc55421b028a01507919fb0",
+      "seconds": 18,
+      "kind": "paired_RL_V4",
+      "split": "train"
+    },
+    {
+      "image": "comparison_t018_view5",
+      "parent": "7817ae11c11c1efe083ab9b5f7a2245e8829c3066dc55421b028a01507919fb0",
+      "seconds": 18,
+      "kind": "paired_RL_V4",
+      "split": "train"
+    },
+    {
+      "image": "comparison_t022_view0",
+      "parent": "1a9633692373a607fef5ee1fec636e78e69e48a598bbf4d755c0f8ed27085f08",
+      "seconds": 22,
+      "kind": "paired_RL_V4",
+      "split": "train"
+    },
+    {
+      "image": "comparison_t022_view1",
+      "parent": "1a9633692373a607fef5ee1fec636e78e69e48a598bbf4d755c0f8ed27085f08",
+      "seconds": 22,
+      "kind": "paired_RL_V4",
+      "split": "train"
+    },
+    {
+      "image": "comparison_t022_view2",
+      "parent": "1a9633692373a607fef5ee1fec636e78e69e48a598bbf4d755c0f8ed27085f08",
+      "seconds": 22,
+      "kind": "paired_RL_V4",
+      "split": "train"
+    },
+    {
+      "image": "comparison_t022_view3",
+      "parent": "1a9633692373a607fef5ee1fec636e78e69e48a598bbf4d755c0f8ed27085f08",
+      "seconds": 22,
+      "kind": "paired_RL_V4",
+      "split": "train"
+    },
+    {
+      "image": "comparison_t022_view4",
+      "parent": "1a9633692373a607fef5ee1fec636e78e69e48a598bbf4d755c0f8ed27085f08",
+      "seconds": 22,
+      "kind": "paired_RL_V4",
+      "split": "train"
+    },
+    {
+      "image": "comparison_t022_view5",
+      "parent": "1a9633692373a607fef5ee1fec636e78e69e48a598bbf4d755c0f8ed27085f08",
+      "seconds": 22,
+      "kind": "paired_RL_V4",
+      "split": "train"
+    },
+    {
+      "image": "comparison_t024_view0",
+      "parent": "81e556eb536834a1fad4098f9e9370932015ab66855b7bbf8faaf4160277a048",
+      "seconds": 24,
+      "kind": "paired_RL_V4",
+      "split": "train"
+    },
+    {
+      "image": "comparison_t024_view1",
+      "parent": "81e556eb536834a1fad4098f9e9370932015ab66855b7bbf8faaf4160277a048",
+      "seconds": 24,
+      "kind": "paired_RL_V4",
+      "split": "train"
+    },
+    {
+      "image": "comparison_t024_view2",
+      "parent": "81e556eb536834a1fad4098f9e9370932015ab66855b7bbf8faaf4160277a048",
+      "seconds": 24,
+      "kind": "paired_RL_V4",
+      "split": "train"
+    },
+    {
+      "image": "comparison_t024_view3",
+      "parent": "81e556eb536834a1fad4098f9e9370932015ab66855b7bbf8faaf4160277a048",
+      "seconds": 24,
+      "kind": "paired_RL_V4",
+      "split": "train"
+    },
+    {
+      "image": "comparison_t024_view4",
+      "parent": "81e556eb536834a1fad4098f9e9370932015ab66855b7bbf8faaf4160277a048",
+      "seconds": 24,
+      "kind": "paired_RL_V4",
+      "split": "train"
+    },
+    {
+      "image": "comparison_t024_view5",
+      "parent": "81e556eb536834a1fad4098f9e9370932015ab66855b7bbf8faaf4160277a048",
+      "seconds": 24,
+      "kind": "paired_RL_V4",
+      "split": "train"
+    },
+    {
+      "image": "comparison_t026_view0",
+      "parent": "4bf6b57b9c6194ed182b037417bda06f7e423a03f6753ec391c6a2ccb83b5b41",
+      "seconds": 26,
+      "kind": "paired_RL_V4",
+      "split": "train"
+    },
+    {
+      "image": "comparison_t026_view1",
+      "parent": "4bf6b57b9c6194ed182b037417bda06f7e423a03f6753ec391c6a2ccb83b5b41",
+      "seconds": 26,
+      "kind": "paired_RL_V4",
+      "split": "train"
+    },
+    {
+      "image": "comparison_t026_view2",
+      "parent": "4bf6b57b9c6194ed182b037417bda06f7e423a03f6753ec391c6a2ccb83b5b41",
+      "seconds": 26,
+      "kind": "paired_RL_V4",
+      "split": "train"
+    },
+    {
+      "image": "comparison_t026_view3",
+      "parent": "4bf6b57b9c6194ed182b037417bda06f7e423a03f6753ec391c6a2ccb83b5b41",
+      "seconds": 26,
+      "kind": "paired_RL_V4",
+      "split": "train"
+    },
+    {
+      "image": "comparison_t026_view4",
+      "parent": "4bf6b57b9c6194ed182b037417bda06f7e423a03f6753ec391c6a2ccb83b5b41",
+      "seconds": 26,
+      "kind": "paired_RL_V4",
+      "split": "train"
+    },
+    {
+      "image": "comparison_t026_view5",
+      "parent": "4bf6b57b9c6194ed182b037417bda06f7e423a03f6753ec391c6a2ccb83b5b41",
+      "seconds": 26,
+      "kind": "paired_RL_V4",
+      "split": "train"
+    },
+    {
+      "image": "comparison_t030_view0",
+      "parent": "ed3b6cde22dd1b22ed3d810804f6abaa4ed366197931aad9c488dc3d3a32b220",
+      "seconds": 30,
+      "kind": "paired_RL_V4",
+      "split": "train"
+    },
+    {
+      "image": "comparison_t030_view1",
+      "parent": "ed3b6cde22dd1b22ed3d810804f6abaa4ed366197931aad9c488dc3d3a32b220",
+      "seconds": 30,
+      "kind": "paired_RL_V4",
+      "split": "train"
+    },
+    {
+      "image": "comparison_t030_view2",
+      "parent": "ed3b6cde22dd1b22ed3d810804f6abaa4ed366197931aad9c488dc3d3a32b220",
+      "seconds": 30,
+      "kind": "paired_RL_V4",
+      "split": "train"
+    },
+    {
+      "image": "comparison_t030_view3",
+      "parent": "ed3b6cde22dd1b22ed3d810804f6abaa4ed366197931aad9c488dc3d3a32b220",
+      "seconds": 30,
+      "kind": "paired_RL_V4",
+      "split": "train"
+    },
+    {
+      "image": "comparison_t030_view4",
+      "parent": "ed3b6cde22dd1b22ed3d810804f6abaa4ed366197931aad9c488dc3d3a32b220",
+      "seconds": 30,
+      "kind": "paired_RL_V4",
+      "split": "train"
+    },
+    {
+      "image": "comparison_t030_view5",
+      "parent": "ed3b6cde22dd1b22ed3d810804f6abaa4ed366197931aad9c488dc3d3a32b220",
+      "seconds": 30,
+      "kind": "paired_RL_V4",
+      "split": "train"
+    },
+    {
+      "image": "hand_case_20261021_220642_585719_0_0",
+      "parent": "case_20261021_220642_585719",
+      "kind": "reviewed_hand_background",
+      "split": "train"
+    },
+    {
+      "image": "hand_case_20261021_220642_585719_0_1",
+      "parent": "case_20261021_220642_585719",
+      "kind": "reviewed_hand_background",
+      "split": "train"
+    },
+    {
+      "image": "hand_case_20261021_220642_585719_0_2",
+      "parent": "case_20261021_220642_585719",
+      "kind": "reviewed_hand_background",
+      "split": "train"
+    },
+    {
+      "image": "hand_case_20261021_220642_585719_1_0",
+      "parent": "case_20261021_220642_585719",
+      "kind": "reviewed_hand_background",
+      "split": "train"
+    },
+    {
+      "image": "hand_case_20261021_220642_585719_1_1",
+      "parent": "case_20261021_220642_585719",
+      "kind": "reviewed_hand_background",
+      "split": "train"
+    },
+    {
+      "image": "hand_case_20261021_220642_585719_1_2",
+      "parent": "case_20261021_220642_585719",
+      "kind": "reviewed_hand_background",
+      "split": "train"
+    },
+    {
+      "image": "hand_case_20261021_220648_209192_0_0",
+      "parent": "case_20261021_220648_209192",
+      "kind": "reviewed_hand_background",
+      "split": "train"
+    },
+    {
+      "image": "hand_case_20261021_220648_209192_0_1",
+      "parent": "case_20261021_220648_209192",
+      "kind": "reviewed_hand_background",
+      "split": "train"
+    },
+    {
+      "image": "hand_case_20261021_220648_209192_0_2",
+      "parent": "case_20261021_220648_209192",
+      "kind": "reviewed_hand_background",
+      "split": "train"
+    },
+    {
+      "image": "hand_case_20261021_220648_209192_1_0",
+      "parent": "case_20261021_220648_209192",
+      "kind": "reviewed_hand_background",
+      "split": "train"
+    },
+    {
+      "image": "hand_case_20261021_220648_209192_1_1",
+      "parent": "case_20261021_220648_209192",
+      "kind": "reviewed_hand_background",
+      "split": "train"
+    },
+    {
+      "image": "hand_case_20261021_220648_209192_1_2",
+      "parent": "case_20261021_220648_209192",
+      "kind": "reviewed_hand_background",
+      "split": "train"
+    }
+  ]
+}

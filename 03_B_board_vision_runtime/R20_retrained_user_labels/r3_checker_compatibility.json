@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "opencv_version": "4.12.0",
+  "model_sha256": "6a4215eb3ed7ed2eeb29cb48478a518cef6bb50e78a8507e75635fd09ccb273a",
+  "input_frame_shape": [
+    720,
+    1280,
+    3
+  ],
+  "fixed_batch_points": 10,
+  "checker_status": "ok",
+  "inference_ms_local_pc_only": 4.000700000000023,
+  "method": "unchanged R3 CalibratedPatchPresenceChecker loaded candidate ONNX and ran one full 10-point batch",
+  "scope_note": "This validates file/interface compatibility on PC OpenCV 4.12; it is not a B-board deployment or accuracy test."
+}

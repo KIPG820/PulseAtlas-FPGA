@@ -1,0 +1,18 @@
+[Unit]
+Description=PulseAtlas B-board R7 vision inference service
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/home/xilinx/PulseAtlas_B_Vision_R7_20261013
+Environment=PYTHONUNBUFFERED=1
+ExecStart=/bin/bash -lc '. /etc/profile.d/xrt_setup.sh 2>/dev/null || true; exec /usr/local/share/pynq-venv/bin/python run_vision_service_r7.py --host 0.0.0.0 --port 8765 --camera 0 --preview-fps 5'
+Restart=on-failure
+RestartSec=3
+KillSignal=SIGINT
+TimeoutStopSec=15
+
+[Install]
+WantedBy=multi-user.target

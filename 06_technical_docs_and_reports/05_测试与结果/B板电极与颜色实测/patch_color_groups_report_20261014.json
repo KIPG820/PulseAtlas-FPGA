@@ -1,0 +1,145 @@
+{
+  "purpose": "pad color-group comparison after local pad-presence detection",
+  "groups": {
+    "red": [
+      "R",
+      "C1"
+    ],
+    "yellow": [
+      "L",
+      "C2"
+    ],
+    "dark": [
+      "N",
+      "C4",
+      "C5"
+    ],
+    "green": [
+      "F",
+      "C3"
+    ],
+    "purple": [
+      "C6"
+    ]
+  },
+  "training_positive_crops": 528,
+  "body_frame_counts": {
+    "test": 39,
+    "train": 391,
+    "val": 68
+  },
+  "excluded_frame_counts": {
+    "test|non_body_scene": 13,
+    "train|non_body_scene": 40,
+    "val|non_body_scene": 73,
+    "train|unreviewed_or_excluded": 17,
+    "train|multi_review_pending": 4
+  },
+  "metrics": {
+    "val": {
+      "count": 73,
+      "accuracy": 1.0,
+      "macro_recall": 1.0,
+      "group_recall": {
+        "red": 1.0,
+        "yellow": 1.0,
+        "dark": 1.0,
+        "green": 1.0,
+        "purple": 1.0
+      },
+      "confusion_true_rows_pred_columns": [
+        [
+          26,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          26,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          11,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          6,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          4
+        ]
+      ]
+    },
+    "test": {
+      "count": 43,
+      "accuracy": 1.0,
+      "macro_recall": 1.0,
+      "group_recall": {
+        "red": 1.0,
+        "yellow": null,
+        "dark": null,
+        "green": 1.0,
+        "purple": null
+      },
+      "confusion_true_rows_pred_columns": [
+        [
+          21,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          22,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ]
+    }
+  },
+  "limitations": [
+    "Held-out validation and frozen test sets are small and share a capture family.",
+    "The frozen test split contains only red and green color groups.",
+    "The matcher compares visual pad color near trusted calibration points; it does not prove skin contact or electrical connection.",
+    "Ambiguous color pairs fall back to local presence at the calibration point."
+  ],
+  "model_sha256": "c7b24ce917ce88214c8200992c420b8696228b9f48f037a66dc3c95badf1f2fc"
+}

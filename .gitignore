@@ -1,0 +1,32 @@
+# Python and test caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# FPGA tool generated state
+.Xil/
+*.jou
+*.log
+*.str
+*.tmp
+*.cache/
+
+# Editors and OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Local recordings and generated outputs
+outputs/
+recordings/
+*.mp4
+*.avi
+
+# Secrets and local environment
+.env
+.env.*
+*.pem
+*.key
+credentials*
+secrets*

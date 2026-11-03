@@ -1,0 +1,32 @@
+{
+  "date": "2026-10-14",
+  "board": "PYNQ-Z2 B",
+  "test": "73 reviewed validation electrode crops from five color groups; offline PS-only HSV color inference",
+  "camera_used": false,
+  "fpga_bitstream_reloaded": false,
+  "active_r7_service_status_before_after": "active",
+  "color_model_sha256": "d36a9cfbb0f50ec28dd160ece0affff55214c9392bbc6ac6c84de47cbfe822ee",
+  "accuracy": 1.0,
+  "samples": 73,
+  "groups": ["dark", "green", "purple", "red", "yellow"],
+  "confusion_true_rows_pred_columns": [
+    [11, 0, 0, 0, 0],
+    [0, 6, 0, 0, 0],
+    [0, 0, 4, 0, 0],
+    [0, 0, 0, 26, 0],
+    [0, 0, 0, 0, 26]
+  ],
+  "batch_ms_median": 386.2039175000973,
+  "batch_ms_p95": 389.7732443540008,
+  "ms_per_crop_median": 5.2904646232890045,
+  "effective_crops_per_second": 189.01931516523678,
+  "max_rss_kib": 74384,
+  "opencv": "4.2.0",
+  "numpy": "1.20.3",
+  "temporary_test_files_removed": true,
+  "limitations": [
+    "Uses saved crops rather than live camera frames.",
+    "Does not measure pose, crop generation, capture, or transmission throughput.",
+    "Data is same-person/capture-family and has no real misplaced-electrode examples."
+  ]
+}

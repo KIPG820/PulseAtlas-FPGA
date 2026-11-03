@@ -1,0 +1,7 @@
+PulseAtlas A-board R9 DMA Startup
+Release date: 2026-10-25
+Base: PulseAtlas A-board R8 / R14 ECG bitstream and TFT integration.
+Change: Arm the first S2MM transfer and start the continuous DMA drain worker before enabling ADS1298 streaming. This closes the startup interval that previously allowed packet FIFOs to backpressure the ADC queue and contaminate the initial waveform/history. R8's immediate DMA re-arm before packet parsing remains included.
+Safety semantics: Model window selection, input length, filtering, classification, and quality checks are unchanged. No interpolation, gap filling, or relaxation of frame-sequence checks.
+Validation: A startup-order regression verifies DMA-armed then drain-worker-running then ADC-started, including cleanup on ADS1298 startup failure. Capture re-arm, AI-window, same-input three-run comparison, and Python compilation checks pass. The R14 bitstream, model, quantization, weights, and filters are unchanged.
+Deployment: Runtime-only update; no FPGA reprogramming is required. R8 remains available for rollback.

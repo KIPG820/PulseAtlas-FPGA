@@ -1,0 +1,220 @@
+{
+  "source": "PTB-XL 1.0.3 official fold 9 validation cache; CC BY 4.0",
+  "shape": [
+    5000,
+    12
+  ],
+  "input_encoding": "affine uint8, time-major, one byte per lead per sample",
+  "output_encoding": "five affine uint8 logit codes in NORM,MI,STTC,CD,HYP order",
+  "output_scale": 0.1987556517124176,
+  "output_zero_point": 74,
+  "contract_sha256": "b6c04d4abc88e1ded64f8972f4c7c9b9d4c76fbdb78076f65dfc17f623415acf",
+  "weights_sha256": "5ab66abb52801481faa8e47c971bcfb534094253ad04f17d14222da8d00d4177",
+  "torchscript_sha256": "af22fd2627e71eab798f47900cac517422ea5be1d64f0c841c8817cd9c192ef4",
+  "vectors": [
+    {
+      "fold9_index": 0,
+      "ptbxl_ecg_id": 8,
+      "ground_truth_labels": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "input_file": "fold9_0000_input_time_major_u8.bin",
+      "input_sha256": "da6f4a0cd6de93dc480775e3e22c89736e8609ee566f0d18d084efe9545c03e9",
+      "input_bytes": 60000,
+      "output_file": "fold9_0000_expected_output_u8.bin",
+      "output_sha256": "507b07b70b83303571afedd51127fd9da276bd16a57d61b3763cbcec0ea0b8de",
+      "reference_qcodes": [
+        81,
+        75,
+        47,
+        59,
+        53
+      ],
+      "torchscript_qcodes": [
+        81,
+        75,
+        47,
+        59,
+        53
+      ],
+      "qcode_delta": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "reference_logits": [
+        1.3912895917892456,
+        0.1987556517124176,
+        -5.366402626037598,
+        -2.981334686279297,
+        -4.173868656158447
+      ],
+      "torchscript_logits": [
+        1.3912895917892456,
+        0.1987556517124176,
+        -5.366402626037598,
+        -2.981334686279297,
+        -4.173868656158447
+      ]
+    },
+    {
+      "fold9_index": 333,
+      "ptbxl_ecg_id": 2801,
+      "ground_truth_labels": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "input_file": "fold9_0333_input_time_major_u8.bin",
+      "input_sha256": "325579093591748aa1fd651db24f07029abeb517bccf96e613e6fe42794f4a30",
+      "input_bytes": 60000,
+      "output_file": "fold9_0333_expected_output_u8.bin",
+      "output_sha256": "9d0ad555f58d5c7e3c8d8458ea9f9e06ea2160329e2cd81f5dc4c2f01c488886",
+      "reference_qcodes": [
+        95,
+        51,
+        53,
+        53,
+        44
+      ],
+      "torchscript_qcodes": [
+        95,
+        51,
+        53,
+        53,
+        44
+      ],
+      "qcode_delta": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "reference_logits": [
+        4.173868656158447,
+        -4.571380138397217,
+        -4.173868656158447,
+        -4.173868656158447,
+        -5.962669372558594
+      ],
+      "torchscript_logits": [
+        4.173868656158447,
+        -4.571380138397217,
+        -4.173868656158447,
+        -4.173868656158447,
+        -5.962669372558594
+      ]
+    },
+    {
+      "fold9_index": 1024,
+      "ptbxl_ecg_id": 9615,
+      "ground_truth_labels": [
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "input_file": "fold9_1024_input_time_major_u8.bin",
+      "input_sha256": "02c94d1ae34e9daf9a8b0798cf614954bcff857b9f9cd034ab2da6632c30349d",
+      "input_bytes": 60000,
+      "output_file": "fold9_1024_expected_output_u8.bin",
+      "output_sha256": "84674c8017e7ad9a09a76194bc8a6bde0bf889dead3bfbf1310e777ef6fda7bc",
+      "reference_qcodes": [
+        61,
+        61,
+        84,
+        64,
+        90
+      ],
+      "torchscript_qcodes": [
+        61,
+        60,
+        84,
+        63,
+        90
+      ],
+      "qcode_delta": [
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "reference_logits": [
+        -2.5838234424591064,
+        -2.5838234424591064,
+        1.9875564575195312,
+        -1.9875564575195312,
+        3.1800904273986816
+      ],
+      "torchscript_logits": [
+        -2.5838234424591064,
+        -2.782579183578491,
+        1.9875564575195312,
+        -2.186312198638916,
+        3.1800904273986816
+      ]
+    },
+    {
+      "fold9_index": 2000,
+      "ptbxl_ecg_id": 19361,
+      "ground_truth_labels": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "input_file": "fold9_2000_input_time_major_u8.bin",
+      "input_sha256": "ac9b20d1a1fb8a7920fd0518e3707f95de022a6b3cd541b589c3db64bc1f549b",
+      "input_bytes": 60000,
+      "output_file": "fold9_2000_expected_output_u8.bin",
+      "output_sha256": "82673f00e0ca90887527265dc6d5f018382298f8d31684a1a8bda62477062bda",
+      "reference_qcodes": [
+        99,
+        35,
+        52,
+        54,
+        44
+      ],
+      "torchscript_qcodes": [
+        100,
+        35,
+        52,
+        54,
+        44
+      ],
+      "qcode_delta": [
+        -1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "reference_logits": [
+        4.968891143798828,
+        -7.751470565795898,
+        -4.372624397277832,
+        -3.9751129150390625,
+        -5.962669372558594
+      ],
+      "torchscript_logits": [
+        5.167646884918213,
+        -7.751470565795898,
+        -4.372624397277832,
+        -3.9751129150390625,
+        -5.962669372558594
+      ]
+    }
+  ]
+}

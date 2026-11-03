@@ -1,0 +1,358 @@
+{
+  "experiment": "HSV circular LDA video-group CV with training-only synthetic photometric augmentation",
+  "source_samples": 528,
+  "video_groups": 17,
+  "source_skipped": {
+    "non_body_scene": 40,
+    "unreviewed_or_excluded": 17,
+    "multi_review_pending": 4
+  },
+  "augmentation_count_per_training_crop": 5,
+  "baseline_held_out_original": {
+    "samples": 528,
+    "accuracy": 0.9696969696969697,
+    "worst_video_accuracy": 0.7272727272727273,
+    "median_video_accuracy": 1.0,
+    "mean_confidence": 0.9735780358314514,
+    "folds": [
+      {
+        "video_group": "video_10",
+        "samples": 17,
+        "accuracy": 0.9411764705882353
+      },
+      {
+        "video_group": "video_12",
+        "samples": 24,
+        "accuracy": 1.0
+      },
+      {
+        "video_group": "video_13",
+        "samples": 28,
+        "accuracy": 1.0
+      },
+      {
+        "video_group": "video_14",
+        "samples": 24,
+        "accuracy": 1.0
+      },
+      {
+        "video_group": "video_2",
+        "samples": 26,
+        "accuracy": 1.0
+      },
+      {
+        "video_group": "video_24",
+        "samples": 179,
+        "accuracy": 0.9888268156424581
+      },
+      {
+        "video_group": "video_25",
+        "samples": 16,
+        "accuracy": 1.0
+      },
+      {
+        "video_group": "video_27",
+        "samples": 22,
+        "accuracy": 0.7272727272727273
+      },
+      {
+        "video_group": "video_28",
+        "samples": 33,
+        "accuracy": 0.8484848484848485
+      },
+      {
+        "video_group": "video_29",
+        "samples": 21,
+        "accuracy": 0.9523809523809523
+      },
+      {
+        "video_group": "video_3",
+        "samples": 18,
+        "accuracy": 1.0
+      },
+      {
+        "video_group": "video_30",
+        "samples": 19,
+        "accuracy": 1.0
+      },
+      {
+        "video_group": "video_5",
+        "samples": 18,
+        "accuracy": 1.0
+      },
+      {
+        "video_group": "video_6",
+        "samples": 16,
+        "accuracy": 0.9375
+      },
+      {
+        "video_group": "video_7",
+        "samples": 25,
+        "accuracy": 1.0
+      },
+      {
+        "video_group": "video_8",
+        "samples": 23,
+        "accuracy": 1.0
+      },
+      {
+        "video_group": "video_9",
+        "samples": 19,
+        "accuracy": 1.0
+      }
+    ]
+  },
+  "augmented_held_out_original": {
+    "samples": 528,
+    "accuracy": 0.9659090909090909,
+    "worst_video_accuracy": 0.7619047619047619,
+    "median_video_accuracy": 1.0,
+    "mean_confidence": 0.9452728629112244,
+    "folds": [
+      {
+        "video_group": "video_10",
+        "samples": 17,
+        "accuracy": 0.9411764705882353
+      },
+      {
+        "video_group": "video_12",
+        "samples": 24,
+        "accuracy": 1.0
+      },
+      {
+        "video_group": "video_13",
+        "samples": 28,
+        "accuracy": 0.8571428571428571
+      },
+      {
+        "video_group": "video_14",
+        "samples": 24,
+        "accuracy": 0.9583333333333334
+      },
+      {
+        "video_group": "video_2",
+        "samples": 26,
+        "accuracy": 1.0
+      },
+      {
+        "video_group": "video_24",
+        "samples": 179,
+        "accuracy": 0.994413407821229
+      },
+      {
+        "video_group": "video_25",
+        "samples": 16,
+        "accuracy": 1.0
+      },
+      {
+        "video_group": "video_27",
+        "samples": 22,
+        "accuracy": 0.8636363636363636
+      },
+      {
+        "video_group": "video_28",
+        "samples": 33,
+        "accuracy": 0.9393939393939394
+      },
+      {
+        "video_group": "video_29",
+        "samples": 21,
+        "accuracy": 0.7619047619047619
+      },
+      {
+        "video_group": "video_3",
+        "samples": 18,
+        "accuracy": 1.0
+      },
+      {
+        "video_group": "video_30",
+        "samples": 19,
+        "accuracy": 1.0
+      },
+      {
+        "video_group": "video_5",
+        "samples": 18,
+        "accuracy": 1.0
+      },
+      {
+        "video_group": "video_6",
+        "samples": 16,
+        "accuracy": 0.9375
+      },
+      {
+        "video_group": "video_7",
+        "samples": 25,
+        "accuracy": 1.0
+      },
+      {
+        "video_group": "video_8",
+        "samples": 23,
+        "accuracy": 1.0
+      },
+      {
+        "video_group": "video_9",
+        "samples": 19,
+        "accuracy": 1.0
+      }
+    ]
+  },
+  "augmented_held_out_illumination": {
+    "dim": {
+      "baseline": {
+        "samples": 528,
+        "accuracy": 0.8958333333333334,
+        "mean_confidence": 0.9642661213874817
+      },
+      "augmented": {
+        "samples": 528,
+        "accuracy": 0.9223484848484849,
+        "mean_confidence": 0.9369450211524963
+      }
+    },
+    "warm": {
+      "baseline": {
+        "samples": 528,
+        "accuracy": 0.8617424242424242,
+        "mean_confidence": 0.9337027072906494
+      },
+      "augmented": {
+        "samples": 528,
+        "accuracy": 0.9488636363636364,
+        "mean_confidence": 0.9210810661315918
+      }
+    },
+    "cool": {
+      "baseline": {
+        "samples": 528,
+        "accuracy": 0.6761363636363636,
+        "mean_confidence": 0.9649636149406433
+      },
+      "augmented": {
+        "samples": 528,
+        "accuracy": 0.9185606060606061,
+        "mean_confidence": 0.9246333837509155
+      }
+    },
+    "dim_warm": {
+      "baseline": {
+        "samples": 528,
+        "accuracy": 0.8446969696969697,
+        "mean_confidence": 0.9499247074127197
+      },
+      "augmented": {
+        "samples": 528,
+        "accuracy": 0.9393939393939394,
+        "mean_confidence": 0.9180976152420044
+      }
+    }
+  },
+  "limitations": [
+    "All source images come from one person/capture family.",
+    "Lighting shifts are synthetic and do not replace camera captures.",
+    "Fold metrics evaluate color-group classification on annotated pad crops, not real placement mistakes."
+  ],
+  "candidate_model": "D:\\ECG-fpga\\b_board\\PulseAtlas_B_Vision_R20_PatchRobustness\\patch_color_groups_hsv_augmented_candidate.json",
+  "holdout_split_color_metrics": {
+    "val": {
+      "nominal": {
+        "baseline": {
+          "samples": 73,
+          "accuracy": 1.0,
+          "confidence_mean": 0.9911882322128505
+        },
+        "augmented": {
+          "samples": 73,
+          "accuracy": 1.0,
+          "confidence_mean": 0.9809297976428515
+        }
+      },
+      "dim": {
+        "baseline": {
+          "samples": 73,
+          "accuracy": 0.9726027397260274,
+          "confidence_mean": 0.9844499303870005
+        },
+        "augmented": {
+          "samples": 73,
+          "accuracy": 1.0,
+          "confidence_mean": 0.9682894985969752
+        }
+      },
+      "warm_white_balance": {
+        "baseline": {
+          "samples": 73,
+          "accuracy": 0.8767123287671232,
+          "confidence_mean": 0.9106909379567185
+        },
+        "augmented": {
+          "samples": 73,
+          "accuracy": 1.0,
+          "confidence_mean": 0.9125909927773149
+        }
+      },
+      "cool_white_balance": {
+        "baseline": {
+          "samples": 73,
+          "accuracy": 0.589041095890411,
+          "confidence_mean": 0.9575318645124566
+        },
+        "augmented": {
+          "samples": 73,
+          "accuracy": 0.8082191780821918,
+          "confidence_mean": 0.9162957300878551
+        }
+      }
+    },
+    "test": {
+      "nominal": {
+        "baseline": {
+          "samples": 43,
+          "accuracy": 1.0,
+          "confidence_mean": 0.9956786604814751
+        },
+        "augmented": {
+          "samples": 43,
+          "accuracy": 1.0,
+          "confidence_mean": 0.9953910181688708
+        }
+      },
+      "dim": {
+        "baseline": {
+          "samples": 43,
+          "accuracy": 0.9534883720930233,
+          "confidence_mean": 0.9760486885558727
+        },
+        "augmented": {
+          "samples": 43,
+          "accuracy": 1.0,
+          "confidence_mean": 0.9923484561055206
+        }
+      },
+      "warm_white_balance": {
+        "baseline": {
+          "samples": 43,
+          "accuracy": 0.8837209302325582,
+          "confidence_mean": 0.850118778472723
+        },
+        "augmented": {
+          "samples": 43,
+          "accuracy": 1.0,
+          "confidence_mean": 0.9800259346185729
+        }
+      },
+      "cool_white_balance": {
+        "baseline": {
+          "samples": 43,
+          "accuracy": 0.7441860465116279,
+          "confidence_mean": 0.9279356169146161
+        },
+        "augmented": {
+          "samples": 43,
+          "accuracy": 1.0,
+          "confidence_mean": 0.8833882365115854
+        }
+      }
+    }
+  },
+  "report": "D:\\ECG-fpga\\b_board\\PulseAtlas_B_Vision_R20_PatchRobustness\\color_whitebalance_cv_report.json"
+}

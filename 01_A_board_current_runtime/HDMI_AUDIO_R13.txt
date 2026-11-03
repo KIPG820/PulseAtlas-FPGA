@@ -1,0 +1,5 @@
+# HDMI audio experiment (deferred)
+
+HDMI audio was explored in an earlier R13 hardware experiment. It is not part
+of this R14 acceptance bitstream and is not being tested in this acceptance
+round. The UI/TFT and other R14 corrections are the current focus.

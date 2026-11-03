@@ -1,0 +1,50 @@
+{
+  "passed": true,
+  "images": 4,
+  "main_model_version": "paired_contrast_selected14",
+  "checkpoint_sha256": "a8fbe6ac8a2cdbf2f7fe542e49384be0aab6184936fcd2a75ec7d918b4a88ba1",
+  "roi_guard_enabled": false,
+  "max_coordinate_delta_px": 0.0,
+  "identities_and_same_frame_pose_verified": true,
+  "source_images_unmodified": true,
+  "camera_opened": false,
+  "frames": [
+    {
+      "image": "comparison_t052.jpg",
+      "gui_lead_ids": [
+        "C5",
+        "N",
+        "C4"
+      ],
+      "pose_status": "valid_torso",
+      "frame_id": 0
+    },
+    {
+      "image": "comparison_t054.jpg",
+      "gui_lead_ids": [
+        "C4",
+        "N"
+      ],
+      "pose_status": "valid_torso",
+      "frame_id": 1
+    },
+    {
+      "image": "comparison_t056.jpg",
+      "gui_lead_ids": [
+        "C4",
+        "N"
+      ],
+      "pose_status": "valid_torso",
+      "frame_id": 2
+    },
+    {
+      "image": "comparison_t060.jpg",
+      "gui_lead_ids": [
+        "C4",
+        "N"
+      ],
+      "pose_status": "valid_torso",
+      "frame_id": 3
+    }
+  ]
+}

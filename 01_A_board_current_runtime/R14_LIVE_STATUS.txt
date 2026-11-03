@@ -1,0 +1,8 @@
+PulseAtlas A-board R4 live device status
+FPGA project: bld/ecg_nn_r14_live_status
+Source baseline: isolated clone of the R13 TFT-SPI design; R3/R13 release retained unchanged.
+ECG: ADS1298 remains powered in SDATAC while monitoring is stopped; ID is polled every 1 s. CTRL bit 5 starts/stops the continuous data stream without restarting the ADC. Missing ID retries every 250 ms; 500 ms without DRDY during streaming triggers recovery.
+Network: wired or wireless carrier/operstate is polled every 500 ms.
+USB camera: A checks local /dev/video nodes; the B R2 passive subscription reports the configured /dev/videoN node while capture/inference is idle.
+Validation: XSim hot-plug, stream start/stop, framing, FIFO and reconfiguration checks passed. Vivado 2024.2 synthesis: 0 errors. Route: 0 unrouted nets, WNS +0.210 ns, WHS +0.019 ns, 0 DRC errors.
+Physical R4 ADC hot-plug is not claimed as tested unless the matching R4 package has been loaded and an ADS1298 frontend is connected.

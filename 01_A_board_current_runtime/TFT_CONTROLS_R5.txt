@@ -1,0 +1,22 @@
+PulseAtlas A-board R5 display controls
+Date: 2026-10-11
+
+Changes
+- Added a settings shortcut to the TFT page header.
+- Added live waveform filter and gain controls to the TFT monitor page.
+- Added functional filter and gain controls to the TFT settings page.
+- Connected HDMI monitor filter and scale controls to the same application state.
+- Added a settings shortcut on the HDMI monitor and made its ratio button open settings.
+- Display filter-off mode uses raw 8-channel packet records converted to the FPGA's
+  12-lead order. The AI page continues to use the original filtered lead records.
+- Gain is a display-only setting shared by the TFT and HDMI renderers.
+
+Verification
+- Python compilation passed.
+- TFT render/touch contract passed.
+- TFT and HDMI touch-route smoke tests passed.
+- AI PS/FPGA same-input comparison tests passed.
+- Button-navigation and SW0 display-mode contracts passed.
+- LVGL board library cross-compiled for Cortex-A9 hard-float Linux.
+- Exported symbol pulseatlas_board_set_display_controls verified in the library.
+- PYNQ board runtime verification is required after installation.

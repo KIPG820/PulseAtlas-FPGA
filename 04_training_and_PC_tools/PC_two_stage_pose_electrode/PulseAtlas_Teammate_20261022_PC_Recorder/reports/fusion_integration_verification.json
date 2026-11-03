@@ -1,0 +1,88 @@
+{
+  "passed": true,
+  "actual_fusion_source_pipeline": true,
+  "camera_opened": false,
+  "first_stage_and_matching_files_unchanged": true,
+  "identity_guard_enabled": false,
+  "identity_guard_last_proposals": 0,
+  "canonical_legacy_name_predictions_match": true,
+  "max_coordinate_delta_px": 0.0,
+  "real_common_test_frames": 14,
+  "detector_metrics_reproduced": {
+    "conf": 0.15,
+    "tp": 59,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "per_class": {
+      "RA": {
+        "tp": 10,
+        "fp": 0,
+        "fn": 0
+      },
+      "LA": {
+        "tp": 4,
+        "fp": 0,
+        "fn": 0
+      },
+      "RL": {
+        "tp": 4,
+        "fp": 0,
+        "fn": 0
+      },
+      "LL": {
+        "tp": 6,
+        "fp": 0,
+        "fn": 0
+      },
+      "V1": {
+        "tp": 6,
+        "fp": 0,
+        "fn": 0
+      },
+      "V2": {
+        "tp": 8,
+        "fp": 0,
+        "fn": 0
+      },
+      "V3": {
+        "tp": 7,
+        "fp": 0,
+        "fn": 0
+      },
+      "V4": {
+        "tp": 4,
+        "fp": 0,
+        "fn": 0
+      },
+      "V5": {
+        "tp": 8,
+        "fp": 0,
+        "fn": 0
+      },
+      "V6": {
+        "tp": 2,
+        "fp": 0,
+        "fn": 0
+      }
+    }
+  },
+  "raw_inputs_unchanged": true,
+  "same_frame_consistency": true,
+  "valid_torso_frames": 14,
+  "device": "0",
+  "input_shape": [
+    736,
+    1280
+  ],
+  "source_model_sha256": "a8fbe6ac8a2cdbf2f7fe542e49384be0aab6184936fcd2a75ec7d918b4a88ba1",
+  "pose_sha256": "78543e228d6eeeb3788bc8fd7246c32ccee21ad5e83c0a12e5f1dba17e5ec8db",
+  "video_decoded_frames": 90,
+  "offline_full_pipeline_fps": 17.41645438105153,
+  "iteration_p95_ms": 63.40524500014908,
+  "note": "90 frames repeating 3 existing validation images, resized1080p. Includes source video decode, real R12 pose/reference/placement, detector, overlays, JSONL/MP4 encode. No USB/Tk display; matching is geometric only, not clinical accuracy.",
+  "temporal_mode_exercised_in_this_benchmark": false,
+  "temporal_live_helper_separately_verified": true
+}

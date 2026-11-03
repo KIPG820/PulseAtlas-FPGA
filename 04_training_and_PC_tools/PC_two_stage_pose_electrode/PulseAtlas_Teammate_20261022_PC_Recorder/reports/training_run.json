@@ -1,0 +1,246 @@
+{
+  "status": "finished",
+  "base": "D:\\iwen-codex\\yolov11\\artifacts\\pulseatlas\\fusion_transfer_20261021\\final\\electrode_fusion_transfer.pt",
+  "config": {
+    "imgsz": 1280,
+    "epochs": 32,
+    "patience": 32,
+    "batch": 4,
+    "nbs": 16,
+    "device": 0,
+    "workers": 0,
+    "amp": true,
+    "optimizer": "AdamW",
+    "lr0": 4e-05,
+    "lrf": 0.1,
+    "cos_lr": true,
+    "warmup_epochs": 1,
+    "weight_decay": 0.0005,
+    "cls": 1.0,
+    "seed": 20261022,
+    "deterministic": true,
+    "fliplr": 0.0,
+    "flipud": 0.0,
+    "degrees": 2.0,
+    "translate": 0.1,
+    "scale": 0.15,
+    "hsv_h": 0.0,
+    "hsv_s": 0.025,
+    "hsv_v": 0.08,
+    "mosaic": 0.0,
+    "mixup": 0.0,
+    "freeze": 5,
+    "project": "runs/pulseatlas_comparison_transfer_20261022",
+    "name": "paired_finetune",
+    "save_period": 4,
+    "plots": false
+  },
+  "best": {
+    "epoch": 14,
+    "eligible": true,
+    "identity": {
+      "2": {
+        "truth": 3,
+        "top1": 3,
+        "unambiguous": 3,
+        "missed": 0,
+        "conflicting": 0
+      },
+      "7": {
+        "truth": 3,
+        "top1": 3,
+        "unambiguous": 3,
+        "missed": 0,
+        "conflicting": 0
+      }
+    },
+    "metrics": {
+      "val": {
+        "conf": 0.15,
+        "tp": 131,
+        "fp": 4,
+        "fn": 2,
+        "precision": 0.9703703703703703,
+        "recall": 0.9849624060150376,
+        "f1": 0.9776119402985074,
+        "per_class": {
+          "RA": {
+            "tp": 21,
+            "fp": 1,
+            "fn": 1
+          },
+          "LA": {
+            "tp": 8,
+            "fp": 1,
+            "fn": 0
+          },
+          "RL": {
+            "tp": 9,
+            "fp": 1,
+            "fn": 0
+          },
+          "LL": {
+            "tp": 14,
+            "fp": 0,
+            "fn": 0
+          },
+          "V1": {
+            "tp": 12,
+            "fp": 0,
+            "fn": 1
+          },
+          "V2": {
+            "tp": 18,
+            "fp": 0,
+            "fn": 0
+          },
+          "V3": {
+            "tp": 18,
+            "fp": 1,
+            "fn": 0
+          },
+          "V4": {
+            "tp": 9,
+            "fp": 0,
+            "fn": 0
+          },
+          "V5": {
+            "tp": 19,
+            "fp": 0,
+            "fn": 0
+          },
+          "V6": {
+            "tp": 3,
+            "fp": 0,
+            "fn": 0
+          }
+        },
+        "macro_f1": 0.9776063319159295
+      },
+      "legacy_val": {
+        "conf": 0.15,
+        "tp": 38,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "per_class": {
+          "RA": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0
+          },
+          "LA": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0
+          },
+          "RL": {
+            "tp": 19,
+            "fp": 0,
+            "fn": 0
+          },
+          "LL": {
+            "tp": 19,
+            "fp": 0,
+            "fn": 0
+          },
+          "V1": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0
+          },
+          "V2": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0
+          },
+          "V3": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0
+          },
+          "V4": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0
+          },
+          "V5": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0
+          },
+          "V6": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0
+          }
+        }
+      },
+      "comparison_val": {
+        "conf": 0.15,
+        "tp": 6,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "per_class": {
+          "RA": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0
+          },
+          "LA": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0
+          },
+          "RL": {
+            "tp": 3,
+            "fp": 0,
+            "fn": 0
+          },
+          "LL": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0
+          },
+          "V1": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0
+          },
+          "V2": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0
+          },
+          "V3": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0
+          },
+          "V4": {
+            "tp": 3,
+            "fp": 0,
+            "fn": 0
+          },
+          "V5": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0
+          },
+          "V6": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0
+          }
+        }
+      }
+    }
+  },
+  "finished": 1792626155.4300568,
+  "test_used": false
+}

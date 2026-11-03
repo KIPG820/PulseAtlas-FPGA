@@ -1,0 +1,10 @@
+{
+  "package": "Fusion_Contrast_20261022",
+  "main_sha256": "a8fbe6ac8a2cdbf2f7fe542e49384be0aab6184936fcd2a75ec7d918b4a88ba1",
+  "canonical_sha256": "d0d3b9be665bb27b8e87bb07bc66d3bcc29628958464c6445bea501e1da26816",
+  "baseline_sha256": "8c1208829eac60f2b3b02a791da1f4e594838955ae5b3f08a9d4fccafd4807ad",
+  "first_stage_and_matching_unchanged": true,
+  "roi_guard_enabled": false,
+  "new_independent_usb_acceptance": false,
+  "raw_people_included": false
+}

@@ -1,0 +1,15 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/zsd88/Desktop/ECG-fpga/PYNQ-3.1.1/boards/Pynq-Z2/ecg_nn_r9q/ip_repo_ecg/ecg_classic_filter_ip/src/axi4lite_regfile.sv" into library work
+INFO: [VRFC 10-311] analyzing module axi4lite_regfile
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/zsd88/Desktop/ECG-fpga/PYNQ-3.1.1/boards/Pynq-Z2/ecg_nn_r9q/ip_repo_ecg/ecg_classic_filter_ip/src/ecg_filter_stages.sv" into library work
+INFO: [VRFC 10-311] analyzing module ecg_dc_blocker
+INFO: [VRFC 10-311] analyzing module ecg_comb_notch
+INFO: [VRFC 10-311] analyzing module ecg_biquad_dfi
+INFO: [VRFC 10-311] analyzing module ecg_biquad_mc
+INFO: [VRFC 10-311] analyzing module ecg_dc_mc
+INFO: [VRFC 10-311] analyzing module ecg_comb_notch_mc
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/zsd88/Desktop/ECG-fpga/pl/filter_timing/ecg_classic_filter_r9q.sv" into library work
+INFO: [VRFC 10-311] analyzing module ecg_classic_filter_ip_r9q
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/zsd88/Desktop/ECG-fpga/pl/filter_timing/ecg_classic_filter_ip.sv" into library work
+INFO: [VRFC 10-311] analyzing module ecg_classic_filter_ip
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/zsd88/Desktop/ECG-fpga/pl/filter_timing/tb_filter_equiv.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_filter_equiv

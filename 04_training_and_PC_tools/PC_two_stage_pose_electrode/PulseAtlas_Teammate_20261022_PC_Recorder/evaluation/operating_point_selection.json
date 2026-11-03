@@ -1,0 +1,7 @@
+{
+  "checkpoint_sha256": "a8fbe6ac8a2cdbf2f7fe542e49384be0aab6184936fcd2a75ec7d918b4a88ba1",
+  "confidence": 0.15,
+  "test_used_for_selection": false,
+  "selected_epoch": 14,
+  "selection_rule": "paired Val both identity top1 + ambiguity, old ten-class TP protection, F1/macro floors; no test tuning"
+}

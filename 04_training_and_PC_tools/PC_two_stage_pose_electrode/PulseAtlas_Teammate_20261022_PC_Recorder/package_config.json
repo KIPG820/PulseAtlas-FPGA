@@ -1,0 +1,45 @@
+{
+  "package_version": "Fusion_Contrast_20261022",
+  "scope": "PC combined pose + connector + geometric point/box matching",
+  "connector_model": {
+    "path": "models/connector_selected.pt",
+    "sha256": "a8fbe6ac8a2cdbf2f7fe542e49384be0aab6184936fcd2a75ec7d918b4a88ba1",
+    "confidence": 0.15,
+    "classes": [
+      "R",
+      "L",
+      "N",
+      "F",
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "imgsz": [
+      736,
+      1280
+    ],
+    "nms_iou": 0.5,
+    "device": "0"
+  },
+  "pose_model": {
+    "path": "app/vendor_pose/models/yolo11n-pose-cv454.onnx",
+    "sha256": "78543e228d6eeeb3788bc8fd7246c32ccee21ad5e83c0a12e5f1dba17e5ec8db"
+  },
+  "training_run": "paired_contrast_selected14",
+  "model_status": "Fine-tuned main detector with paired V4/RL; no ROI relabel rules. Independent USB acceptance pending.",
+  "raw_training_images_included": false,
+  "new_blind_test_completed": false,
+  "pynq_integration_completed": false,
+  "identity_guard": {
+    "enabled": false
+  },
+  "temporal_identity": {
+    "enabled": true,
+    "confirm_frames": 3,
+    "min_confidence": 0.55,
+    "max_gap_seconds": 0.5
+  }
+}
